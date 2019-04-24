@@ -1,2 +1,1 @@
-import "../vendor/modernizr";
-console.log('asdasd');
+import "./vendor/modernizr";

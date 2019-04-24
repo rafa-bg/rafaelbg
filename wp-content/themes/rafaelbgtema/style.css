@@ -1,66 +1,6 @@
 body {
+  background-color: black;
 	color: white;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(cornflowerblue), to(rebeccapurple));
-	background-image: -webkit-linear-gradient(cornflowerblue, rebeccapurple);
-	background-image: -o-linear-gradient(cornflowerblue, rebeccapurple);
-	background-image: linear-gradient(cornflowerblue, rebeccapurple);
 	display: block;
 }
-
-h2{
-	font-size: 5rem;
-	/*background-image: url('./img/reticula1400.svg');*/
-}
-
-.flex-box {
-
-}
-
-.css-gradients {
-	
-}
-
-@-webkit-keyframes bounceIn {
-  0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-h2 {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: bounceIn;
-          animation-name: bounceIn;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
 /*****************/

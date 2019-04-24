@@ -1,0 +1,40 @@
+$magentafabuloso: #D50057;
+$verdeserio: #06262D;
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+@define-mixin sm_px {
+	@media (min-width: 576px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin md_px {
+	@media (min-width: 768px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin lg_px {
+	@media (min-width: 992px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin xl_px {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin xxl_px {
+	@media (min-width: 1400px) {
+		@mixin-content;
+	}
+}

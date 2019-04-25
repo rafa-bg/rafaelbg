@@ -8,7 +8,7 @@ gulp.task('watch', function() {
 	browserSync.init({
 		notify: false,
 		proxy: configuracion.urlToPreview,
-		ghostMode: false
+		//ghostMode: false
 	});
 	//inicia browsersync
 

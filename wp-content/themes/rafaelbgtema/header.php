@@ -49,3 +49,5 @@
 			</div>
 	</div>
 	<div class="menuprincipal__overlay"></div>
+	<!--.wrappergeneral-->
+	<div class="wrappergeneral">

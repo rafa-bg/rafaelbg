@@ -1,0 +1,25 @@
+.footer {
+	width: 100%;
+	padding: 30px 60px 30px 95px;
+	text-align: right;
+	color: $verdeserio;
+	border-top: 1px solid rgba($verdeserio, 0.10);
+
+	&__p {
+		margin: 0;
+		display: inline-block;
+	}
+
+	&__link {
+		margin: 0;
+		display: inline-block;
+	}
+
+	&__link:hover {
+		color: $magentafabuloso;
+	}
+
+	&__separador {
+		margin: 0 15px;
+	}
+}

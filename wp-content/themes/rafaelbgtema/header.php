@@ -3,12 +3,15 @@
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-
+	<meta name="msapplication-TileColor" content="#03181D">
+	<meta name="theme-color" content="#03181D">
 
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class()?> >
 	<div class="menuprincipal">
+		<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="menuprincipal__logo">
+
 		<ul class="menuprincipal__lista">
 			<li class="menuprincipal__vinculo"><a href="#">Inicio</a></li>
 			<li class="menuprincipal__vinculo"><a href="#">Sobre mi</a></li>
@@ -18,6 +21,21 @@
 		</ul>
 
 		<div class="menuprincipal__footer">
+			<div class="menuprincipal__social">
+				<a href="#">
+					<i class="fab fa-facebook menuprincipal__social__item"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram menuprincipal__social__item"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-facebook-messenger menuprincipal__social__item"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-whatsapp menuprincipal__social__item"></i>
+				</a>
+			</div>
+
 			<a href="#" class="menuprincipal__footer__item">hola@rafaelbg.com</a>
 			<span class="menuprincipal__footer__separador">|</span>
 			<a href="#" class="menuprincipal__footer__item">55 5464 6711</a>

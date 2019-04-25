@@ -14,5 +14,19 @@ body {
 }
 
 .wrappergeneral {
-	padding-left: 80px;
+	padding-left: 0;
+	min-height: calc(100vh - 118px);
+
+	@media (min-width: 480px) {
+		min-height: calc(100vh - 100px);
+	}
+
+	@mixin sm_px {
+		padding-left: 80px;
+		min-height: calc(100vh - 72px);
+	}
+
+	@mixin md_px {
+		min-height: calc(100vh - 79px);
+	}
 }

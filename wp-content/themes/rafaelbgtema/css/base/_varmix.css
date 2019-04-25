@@ -10,6 +10,12 @@ $verdenegro: #03181D;
 	}
 }
 
+@define-mixin xs_px {
+	@media (min-width: 450px) {
+		@mixin-content;
+	}
+}
+
 @define-mixin sm_px {
 	@media (min-width: 576px) {
 		@mixin-content;

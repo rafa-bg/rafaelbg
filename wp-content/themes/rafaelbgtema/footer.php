@@ -1,6 +1,6 @@
 		</div>
 		<footer class="footer"> 
-			<p class="footer__p">© 2019 Rafael BG, Todos los derechos reservados.</p>
+			<p class="footer__p">© 2019 Rafael BG, <br> Todos los derechos reservados.</p>
 			<span class="footer__separador">|</span>
 			<a href="mailto:hola@rafaelbg.com" class="footer__link">hola@rafaelbg.com</a>
 			<span class="footer__separador">|</span>

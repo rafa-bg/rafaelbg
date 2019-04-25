@@ -1,22 +1,37 @@
 .menuprincipal {
-	width: 100%;
-	left: calc(80px - 100%);
-	height: 100vh;
-	background-color: $verdeserio;
-	position: fixed;
-	top:0;
-	transition: left ease-out 0.2s;
 	z-index: 100;
+	position: fixed;
+	background-color: $verdeserio;
+	height: 100vh;
+	width: 100%;
+	left: 0;
+	top: -100vh;
+	right: unset;
+	transition: top ease-out 0.2s;
+	padding-top: 110px;
+
+	@mixin xs_px {
+		padding-top: 140px;
+	} 
 
 	@mixin sm_px {
-		width: 576px;
-		left: -496px;
+		width: 556px;
+		right: unset;
+		left: calc(80px - 556px);
+		top:0;
+		padding-top: 60px;
+		transition: left ease-out 0.2s;
 	}
 
 	&__lista {
 		list-style: none;
-		padding: 60px 0 0 60px;
-		width: 250px;	
+		margin: 0 0 0 30px;
+		padding: 0;
+		width: 250px;
+
+		@mixin xs_px {
+			margin: 0 0 0 60px;
+		} 	
 
 		@mixin sm_px {
 			width: 300px;
@@ -28,11 +43,15 @@
 		text-transform: uppercase;
 		font-family: BebasNeue;
 		font-weight: 500;
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 		margin: 0 0 15px 0;
 		line-height: 100%;
 		transition: text-indent ease-out 0.2s;
 		display: inline-block;
+
+		@mixin xs_px {
+			font-size: 4.5rem;
+		} 
 
 		@mixin sm_px {
 			font-size: 5rem;
@@ -46,9 +65,14 @@
 	&__footer {
 		position: absolute;
 		bottom: 0;
-		padding: 30px 95px 30px 60px;
+		padding: 30px 30px 30px 30px;
 		color: white;
 		width: 100%;
+		text-align: left;
+
+		@mixin sm_px {
+			padding: 30px 95px 30px 60px;
+		}
 	}
 
 	&__footer__item {
@@ -80,10 +104,49 @@
 		opacity: 1;
 		pointer-events: all;
 	}
+
+	&__logo {
+		display: block;
+		width: 40px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+
+		@mixin xs_px {
+			width: 60px;
+			margin-left: 60px;
+		} 
+
+		@mixin sm_px {
+			display: none;
+		}
+	}
+
+	&__social {
+		display: block;
+		margin-bottom: 20px;
+
+		@mixin sm_px {
+			display: none;
+		}
+	}
+
+	&__social__item {
+		margin: 0 20px 0 0;
+		color: white;
+		font-size: 1.25rem;
+	}
+
+	&__social__item:hover {
+		color: $magentafabuloso;
+	}
 }
 
 .menuprincipal--abierto {
-	left: 0;
+	top: 0;
+
+	@mixin sm_px {
+		left: 0;
+	} 
 }
 
 

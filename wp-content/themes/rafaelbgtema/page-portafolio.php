@@ -1,0 +1,13 @@
+<?php 
+get_header();
+?>
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<h1>Portafolio</h1>	
+<?php
+get_footer();
+?>

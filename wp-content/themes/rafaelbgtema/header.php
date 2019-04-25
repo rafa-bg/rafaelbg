@@ -13,11 +13,11 @@
 		<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="menuprincipal__logo">
 
 		<ul class="menuprincipal__lista">
-			<li class="menuprincipal__vinculo"><a href="#">Inicio</a></li>
-			<li class="menuprincipal__vinculo"><a href="#">Sobre mi</a></li>
-			<li class="menuprincipal__vinculo"><a href="#">Servicios</a></li>
-			<li class="menuprincipal__vinculo"><a href="#">Portafolio</a></li>
-			<li class="menuprincipal__vinculo"><a href="#">Contacto</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Inicio</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Sobre mi</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/servicios')) ?>">Servicios</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">Portafolio</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/contacto')) ?>">Contacto</a></li>
 		</ul>
 
 		<div class="menuprincipal__footer">

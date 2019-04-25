@@ -545,4 +545,8 @@ select { /* 1 */
 	}@media (min-width: 480px) {.footer br {
 			display: none
 	}
-		}
+		}/******************/.portada {
+	background-color: #06262D;
+	height: 100vh;
+	width: 100%;
+}

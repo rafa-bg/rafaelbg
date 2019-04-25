@@ -1,2 +1,2 @@
-//import Test from './modules/Test';
-//var test = new Test();
+import MenuCuadrado from './modules/MenuCuadrado';
+var menuCuadrado = new MenuCuadrado();

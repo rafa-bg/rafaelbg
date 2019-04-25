@@ -8,9 +8,11 @@ function rafaelBGSetup() {
 
 add_action('after_setup_theme', 'rafaelBGSetup');
 
-function theme_styles() {  
+function theme_styles() {
   //main css
   wp_enqueue_style( 'main_css', get_stylesheet_directory_uri() . '/style.css' );
+  //font-awesome
+  wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css');  
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles');
 

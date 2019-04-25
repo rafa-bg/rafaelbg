@@ -1,5 +1,6 @@
 $magentafabuloso: #D50057;
 $verdeserio: #06262D;
+$verdenegro: #03181D;
 
 @define-mixin clearfix {
 	&::after {

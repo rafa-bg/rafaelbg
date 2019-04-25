@@ -1,0 +1,33 @@
+.barranavegacion {
+	background-color: $verdenegro;
+	width: 80px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+
+	&__logo {
+		width: 40px;
+		height: auto;
+		transform: translateX(4px);
+	}
+
+	&__social__item {
+		display: block !important;
+		margin-top: 20px;
+		font-size: 1.25rem;
+		color: white;
+		transition: color ease-out 0.25s; 
+	}
+
+	&__social__item:hover {
+		color: $magentafabuloso;
+	}
+}

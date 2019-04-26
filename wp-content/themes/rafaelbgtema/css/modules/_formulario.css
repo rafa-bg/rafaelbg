@@ -4,6 +4,23 @@
 		margin-bottom: 15px;
 	}
 
+	&__wrapperparados {
+		@mixin clearfix;
+	}
+
+	&__wrapper--dos {
+		width: 50%;
+		float: left;
+	}
+
+	&__wrapper--dos:first-child {
+		padding-right: 15px;
+	}
+
+	&__wrapper--dos:last-child {
+		padding-left: 15px;
+	}
+
 	&__label {
 		display: block;
 		color: $magentafabuloso;
@@ -16,16 +33,61 @@
 	&__input {
 		width: 100%;
 		border:none;
-		background-color: rgba($verdeserio, 0.10);
+		outline: none;
 		padding: 10px;
+		background-color: rgba($verdeserio, 0.10);
+		transition: background-color ease-out 0.25s;
+	}
+
+	&__input:focus {
+		background-color: rgba($verdeserio, 0.15);
+		border: none;
+		outline: none;
 	}
 
 	&__textarea {
 		width: 100%;
 		border:none;
-		background-color: rgba($verdeserio, 0.10);
+		outline: none;
 		padding: 10px;
 		resize: none;
 		height: 150px;
+		background-color: rgba($verdeserio, 0.10);
+	}
+
+	&__textarea:focus {
+		background-color: rgba($verdeserio, 0.15);
+		border: none;
+		outline: none;
+	}
+
+	&__boton {
+		color: white;
+		border-radius: 10px;
+		text-transform: uppercase;
+		background-color: $magentafabuloso;
+		border: none;
+		outline: none;
+		font-weight: 600;
+		padding: 15px;
+		width: 100%;
+		cursor: pointer;
+		margin-left: 30px;
+		margin-top: 14px;
+		transition: background-color ease-out 0.25s;
+	}
+
+	&__boton:hover {
+		background-color: #BF004E;
+	}
+
+	&__boton:focus {
+		background-color: #BF004E;
+	}
+
+	&__recapchayboton {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 }

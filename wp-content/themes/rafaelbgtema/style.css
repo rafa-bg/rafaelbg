@@ -770,6 +770,17 @@ select { /* 1 */
 		display: block;
 	}.formulario__wrapper {
 		margin-bottom: 15px;
+	}.formulario__wrapperparados::after {
+		content: "";
+		clear: both;
+		display: table;
+	}.formulario__wrapper--dos {
+		width: 50%;
+		float: left;
+	}.formulario__wrapper--dos:first-child {
+		padding-right: 15px;
+	}.formulario__wrapper--dos:last-child {
+		padding-left: 15px;
 	}.formulario__label {
 		display: block;
 		color: #D50057;
@@ -780,13 +791,62 @@ select { /* 1 */
 	}.formulario__input {
 		width: 100%;
 		border:none;
-		background-color: rgba(6,38,45, 0.10);
+		outline: none;
 		padding: 10px;
+		background-color: rgba(6,38,45, 0.10);
+		-webkit-transition: background-color ease-out 0.25s;
+		-o-transition: background-color ease-out 0.25s;
+		transition: background-color ease-out 0.25s;
+	}.formulario__input:focus {
+		background-color: rgba(6,38,45, 0.15);
+		border: none;
+		outline: none;
 	}.formulario__textarea {
 		width: 100%;
 		border:none;
-		background-color: rgba(6,38,45, 0.10);
+		outline: none;
 		padding: 10px;
 		resize: none;
 		height: 150px;
+		background-color: rgba(6,38,45, 0.10);
+	}.formulario__textarea:focus {
+		background-color: rgba(6,38,45, 0.15);
+		border: none;
+		outline: none;
+	}.formulario__boton {
+		color: white;
+		border-radius: 10px;
+		text-transform: uppercase;
+		background-color: #D50057;
+		border: none;
+		outline: none;
+		font-weight: 600;
+		padding: 15px;
+		width: 100%;
+		cursor: pointer;
+		margin-left: 30px;
+		margin-top: 14px;
+		-webkit-transition: background-color ease-out 0.25s;
+		-o-transition: background-color ease-out 0.25s;
+		transition: background-color ease-out 0.25s;
+	}.formulario__boton:hover {
+		background-color: #BF004E;
+	}.formulario__boton:focus {
+		background-color: #BF004E;
+	}.formulario__recapchayboton {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}.contacto {
+	margin-bottom: 90px;
+}.contacto__parrafo {
+		margin: 0 0 30px 0;
+		color: rgba(3,24,29, 0.85);
+		font-size: 1rem;
 	}

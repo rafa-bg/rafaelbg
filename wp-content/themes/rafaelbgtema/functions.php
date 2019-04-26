@@ -24,6 +24,8 @@ function theme_js() {
   wp_enqueue_script('main_js', get_template_directory_uri() . '/scripts.js', NULL, 1.0, true);
   //vendor
   wp_enqueue_script('vendor_js', get_template_directory_uri() . '/vendor.js', NULL, 1.0, false);
+  //recaptcha
+  wp_enqueue_script('recaptcha', 'https://www.google.com/recaptcha/api.js', NULL, 1.0, true);
 }
  
 add_action( 'wp_enqueue_scripts', 'theme_js');

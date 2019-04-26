@@ -1,0 +1,9 @@
+.contacto {
+	margin-bottom: 90px;
+
+	&__parrafo {
+		margin: 0 0 30px 0;
+		color: rgba($verdenegro, 0.85);
+		font-size: 1rem;
+	}
+}

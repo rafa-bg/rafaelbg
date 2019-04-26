@@ -3,6 +3,7 @@
 @import "base/_varmix";
 @import "base/_tipografias";
 @import "base/_global";
+@import "base/_grid";
 /*****************/
 @import "modules/_menuprincipal";
 @import "modules/_barranavegacion";

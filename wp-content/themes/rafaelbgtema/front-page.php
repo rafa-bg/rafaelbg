@@ -12,11 +12,10 @@ get_header();
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="Rafael Bg" class="portada__nombre">
 </div>
 <div class="conte conte-fijo">
-	<div class="fila">
-		<div class="col col-sm-6">
-		</div>
-	</div>
+
 </div>
+<br><br><br><br><br><br>
+<h1 class="titulogeneral">¡Ve mi trabajo!</h1>
 <?php
 get_footer();
 ?>

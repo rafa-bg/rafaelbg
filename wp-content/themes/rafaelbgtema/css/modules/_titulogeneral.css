@@ -1,0 +1,9 @@
+.titulogeneral {
+	text-transform: uppercase;
+	font-family: BebasNeue;
+	font-weight: 500;
+	font-size: 3rem;
+	color: $magentafabuloso;
+	transform: rotate(-90deg);
+	transform-origin: 0 0%;
+}

@@ -12,30 +12,57 @@ get_header();
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="Rafael Bg" class="portada__nombre">
 </div>
 
-
-
 <div class="portafoliothumbnails conte conte-fijo">
-	<div class="fila">
-		<!--titulo general-->
-		<div class="col col-md-1 titulogeneral__wrapper">
+	<div class="fila fila--titulovertical">
+		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">¡Ve mi trabajo! <span class="titulogeneral__dash"></span></h1>
 		</div>
-		<!--/titulo general-->
-		<!--contenido 12col-->
-		<div class="col col-md-11">
-			<div class="fila">
-				<div class="col col-md-4">
-					<div class="portafoliothumbnails__thumb"></div>
-				</div>
-				<div class="col col-md-4">
-					<div class="portafoliothumbnails__thumb"></div>
-				</div>
-				<div class="col col-md-4">
-					<div class="portafoliothumbnails__thumb"></div>
-				</div>
+		<div class="col-contenido fila">
+			<div class="col col-xl-4">
+				<div class="portafoliothumbnails__thumb"></div>
+			</div>
+			<div class="col col-xl-4">
+				<div class="portafoliothumbnails__thumb"></div>
+			</div>
+			<div class="col col-xl-4">
+				<div class="portafoliothumbnails__thumb"></div>
 			</div>
 		</div>
-		<!--contenido 12col-->
+	</div>
+</div>
+
+
+<div class="contacto conte conte-fijo">
+	<div class="fila fila--titulovertical">
+		<div class="col-titulo titulogeneral__wrapper">
+			<h1 class="titulogeneral">¡Mándame un mensaje!<span class="titulogeneral__dash"></span></h1>
+		</div>
+		<div class="col-contenido fila">
+			<div class="col col-xl-7">
+				<form action="">
+					<div class="formulario__wrapper">
+						<label class="formulario__label" for="nombre">Nombre</label>
+						<input id="nombrecompleto" name="nombre" type="text" class="formulario__input" autocomplete="off">
+					</div>
+					<div class="formulario__wrapper">
+						<label class="formulario__label" for="correoelectronico">Correo Electrónico</label>
+						<input id="correoelectronico" name="correoelectronico" type="email" class="formulario__input" autocomplete="off">
+					</div>
+					<div class="formulario__wrapper">
+						<label class="formulario__label" for="telefono">Teléfono</label>
+						<input id="telefono" name="telefono" type="tel" class="formulario__input" autocomplete="off">
+					</div>
+					<div class="formulario__wrapper">
+						<label class="formulario__label" for="mensaje">Mensaje</label>
+						<textarea id="mensaje" name="mensaje" class="formulario__textarea"></textarea>
+					</div>
+					<input type="submit" class="formulario__boton">
+				</form>
+			</div>
+			<div class="col col-xl-5">
+				<div style="background-color: red; width: 100%; height: 200px;"></div>
+			</div>
+		</div>
 	</div>
 </div>
 

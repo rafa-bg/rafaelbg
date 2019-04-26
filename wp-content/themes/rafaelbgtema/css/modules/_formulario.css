@@ -1,0 +1,31 @@
+.formulario {
+
+	&__wrapper {
+		margin-bottom: 15px;
+	}
+
+	&__label {
+		display: block;
+		color: $magentafabuloso;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		margin-bottom: 5px;
+	}
+
+	&__input {
+		width: 100%;
+		border:none;
+		background-color: rgba($verdeserio, 0.10);
+		padding: 10px;
+	}
+
+	&__textarea {
+		width: 100%;
+		border:none;
+		background-color: rgba($verdeserio, 0.10);
+		padding: 10px;
+		resize: none;
+		height: 150px;
+	}
+}

@@ -155,3 +155,14 @@
 }
 
 /******/
+
+.col-titulo {
+	width: 85px;
+	padding-right: 30px;
+	float: left;
+}
+
+.col-contenido {
+	width: calc(100% - 85px);
+	float: left;
+}

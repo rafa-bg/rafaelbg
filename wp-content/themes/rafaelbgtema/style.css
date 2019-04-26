@@ -549,4 +549,33 @@ select { /* 1 */
 	background-color: #06262D;
 	height: 100vh;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-top: 80px;
+}@media (min-width: 576px) {.portada {
+		padding-top: 0px
 }
+	}.portada__logo {
+		width: 60%;
+		max-width: 350px;
+		display: block;
+		margin: 0 auto;
+		-webkit-transform: translateX(-5%);
+		    -ms-transform: translateX(-5%);
+		        transform: translateX(-5%);
+	}.portada__nombre {
+		width: 60%;
+		max-width: 350px;
+		display: block;
+		margin: 60px auto 0 auto;
+	}

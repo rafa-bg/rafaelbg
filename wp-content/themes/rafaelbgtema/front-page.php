@@ -11,11 +11,37 @@ get_header();
 	</svg>
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="Rafael Bg" class="portada__nombre">
 </div>
-<div class="conte conte-fijo">
 
+
+
+<div class="portafoliothumbnails conte conte-fijo">
+	<div class="fila">
+		<!--titulo general-->
+		<div class="col col-md-1 titulogeneral__wrapper">
+			<h1 class="titulogeneral">¡Ve mi trabajo! <span class="titulogeneral__dash"></span></h1>
+		</div>
+		<!--/titulo general-->
+		<!--contenido 12col-->
+		<div class="col col-md-11">
+			<div class="fila">
+				<div class="col col-md-4">
+					<div class="portafoliothumbnails__thumb"></div>
+				</div>
+				<div class="col col-md-4">
+					<div class="portafoliothumbnails__thumb"></div>
+				</div>
+				<div class="col col-md-4">
+					<div class="portafoliothumbnails__thumb"></div>
+				</div>
+			</div>
+		</div>
+		<!--contenido 12col-->
+	</div>
 </div>
-<br><br><br><br><br><br>
-<h1 class="titulogeneral">¡Ve mi trabajo!</h1>
+
 <?php
 get_footer();
 ?>
+
+
+

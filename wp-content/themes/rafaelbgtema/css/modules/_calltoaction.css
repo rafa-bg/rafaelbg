@@ -1,0 +1,24 @@
+.calltoaction {
+	background-color: $verdeserio;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 90px;
+	
+	&__titulo {
+		margin: 0;
+		color: white;
+		font-family: BebasNeue;
+		font-weight:500;
+		font-size: 4rem;
+		margin: 0 30px;
+	}
+
+	&__logo {
+		height: auto;
+		width: 185px;
+		margin: 0 30px;
+	}
+}

@@ -12,21 +12,57 @@ get_header();
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="Rafael Bg" class="portada__nombre">
 </div>
 
-<div class="portafoliothumbnails conte conte-fijo">
+
+<div class="holahola seccion conte conte-fijo">
+	<div class="fila fila--titulovertical">
+		<div class="col col-5">
+			<div style="height: 630px; width: 100%; background-color: red;"></div>
+		</div>
+		<div class="col col-1"></div>
+		<div class="col col-6">
+			<h1 class="holahola__titulo">¡HOLA HOLA!</h1>
+			<h3 class="holahola__subtitulo">//ME LLAMO RAFAEL</h3>
+			<p class="holahola__parrafo">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie sem ullamcorper dui volutpat ornare. Vivamus scelerisque vitae felis quis pellentesque. Maecenas dapibus metus vel risus volutpat maximus. Cras quis quam eu metus mattis malesuada. Phasellus in mi neque. Integer eget luctus diam. Curabitur nec nulla at nulla ultricies eleifend ut non mauris. Nunc vel mattis orci. Nunc id augue sed lacus rutrum venenatis in at tellus. Nullam lorem tortor, iaculis eget tellus quis, gravida sollicitudin orci. Nulla pulvinar dui nulla, et tempor purus convallis in.
+			</p>
+			<p class="holahola__parrafo">
+				Nulla id mi ut mauris fermentum congue. Morbi eros nibh, sodales non luctus vel, facilisis quis mi. Vivamus placerat massa eu diam elementum ultricies. Etiam in orci semper, convallis ligula ut, rhoncus ipsum. Vivamus orci mauris, rhoncus id augue in, malesuada pretium purus. Nullam finibus orci scelerisque, hendrerit turpis in, vulputate dolor. In pulvinar justo nec est dignissim eleifend. Etiam at ante nisi. Donec non iaculis nisi. Nunc non leo nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque semper porttitor hendrerit. Praesent eget ligula a mi posuere auctor id eu nisl. Phasellus at varius nisl, et iaculis ante.
+			</p>
+		</div>
+	</div>
+</div>
+
+<?php
+    $portaQuery = new WP_Query(array(              
+      'posts_per_page' => 3,
+      'post_type' => 'proyectos',
+    ));  
+?>
+
+<div class="portafoliothumbnails seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">¡Ve mi trabajo! <span class="titulogeneral__dash"></span></h1>
 		</div>
 		<div class="col-contenido fila">
+			<?php 
+			// empieza el if //
+			if ($portaQuery->have_posts()) {
+			    // empieza el while //
+			     while ($portaQuery ->have_posts()) {              
+			         $portaQuery ->the_post();
+			?>
 			<div class="col col-xl-4">
-				<div class="portafoliothumbnails__thumb"></div>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail(); ?>
+				</a>
 			</div>
-			<div class="col col-xl-4">
-				<div class="portafoliothumbnails__thumb"></div>
-			</div>
-			<div class="col col-xl-4">
-				<div class="portafoliothumbnails__thumb"></div>
-			</div>
+			<?php
+				}
+				// termina el while //
+			}
+			// termina el if //
+			?>
 		</div>
 	</div>
 </div>

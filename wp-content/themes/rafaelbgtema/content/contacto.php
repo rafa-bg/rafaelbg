@@ -1,4 +1,4 @@
-<div class="contacto conte conte-fijo">
+<div class="contacto seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">¡Mándame un mensaje!<span class="titulogeneral__dash"></span></h1>
@@ -6,7 +6,7 @@
 		<div class="col-contenido fila">
 			<div class="col col-xl-7">
 				<p class="contacto__parrafo">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui mi, molestie vitae efficitur a, porttitor ut lorem. Duis eget condimentum mi.
+					¿Te gustó mi trabajo? Ponte en contacto 😉
 				</p>
 				<form action="">
 					<div class="formulario__wrapper">

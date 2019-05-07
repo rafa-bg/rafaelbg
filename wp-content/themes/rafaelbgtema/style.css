@@ -652,6 +652,7 @@ select { /* 1 */
 		    -ms-transform: rotate(-45deg) scaleX(1.3);
 		        transform: rotate(-45deg) scaleX(1.3);
 	}.footer {
+	margin-top: 90px;
 	width: 100%;
 	color: #06262D;
 	border-top: 1px solid rgba(6,38,45, 0.10);
@@ -697,7 +698,9 @@ select { /* 1 */
 	}@media (min-width: 480px) {.footer br {
 			display: none
 	}
-		}/******************/.portada {
+		}/******************/.seccion {
+	margin-top: 90px;
+}.portada {
 	background-color: #06262D;
 	height: 100vh;
 	width: 100%;
@@ -730,6 +733,13 @@ select { /* 1 */
 		max-width: 350px;
 		display: block;
 		margin: 60px auto 0 auto;
+	}.portada__titulo {
+		color: white;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		display: inline-block;
+		text-align: center;
 	}.titulogeneral {
 	text-transform: uppercase;
 	font-family: BebasNeue;
@@ -759,15 +769,15 @@ select { /* 1 */
 		background-color: #06262D;
 		display: inline-block;
 		margin: 0 0 15px 15px;
-	}.portafoliothumbnails {
-	margin-top: 100px;
-	margin-bottom: 100px;
-}.portafoliothumbnails__thumb {
+	}.portafoliothumbnails__thumb {
 		width: 100%;
 		height: 0;
 		padding-bottom: 100%;
 		background-color: blue;
 		display: block;
+	}.portafoliothumbnails img {
+		width: 100%;
+		height: auto;
 	}.formulario__wrapper {
 		margin-bottom: 15px;
 	}.formulario__wrapperparados::after {
@@ -843,10 +853,69 @@ select { /* 1 */
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: flex-start;
-	}.contacto {
-	margin-bottom: 90px;
-}.contacto__parrafo {
+	}.contacto__parrafo {
 		margin: 0 0 30px 0;
 		color: rgba(3,24,29, 0.85);
 		font-size: 1rem;
+	}.calltoaction {
+	background-color: #06262D;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 90px;
+}.calltoaction__titulo {
+		margin: 0;
+		color: white;
+		font-family: BebasNeue;
+		font-weight:500;
+		font-size: 4rem;
+		margin: 0 30px;
+	}.calltoaction__logo {
+		height: auto;
+		width: 185px;
+		margin: 0 30px;
+	}/******************/.holahola__titulo {
+		font-size: 5rem;
+		color: #D50057;
+		font-family: BebasNeue;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 80%;
+	}.holahola__subtitulo {
+		margin: 0;
+		font-size: 3rem;
+		font-family: BebasNeue;
+		font-weight: 500;
+		color: #06262D;
+		line-height: 80%;
+	}.holahola__parrafo {
+		color: #06262D;
+		line-height: 150%;
+		font-size: 1rem;
+		margin: 0 0 15px 0;
+	}.servicios__unode {
+		margin-bottom: 90px;
+	}.servicios__titulo {
+		color: #D50057;
+		font-family: BebasNeue;
+		font-weight:500;
+		font-size: 4rem;
+		margin: 0;
+		padding: 0;
+	}.servicios__parrafo {
+		color: #06262D;
+		line-height: 150%;
+		font-size: 1rem;
+		margin: 0 0 15px 0;
+	}.portafolio__unode {
+		margin-bottom: 30px;
 	}

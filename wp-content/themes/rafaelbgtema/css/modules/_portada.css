@@ -26,4 +26,13 @@
 		display: block;
 		margin: 60px auto 0 auto;
 	}
+
+	&__titulo {
+		color: white;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		display: inline-block;
+		text-align: center;
+	}
 }

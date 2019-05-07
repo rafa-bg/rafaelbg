@@ -1,0 +1,29 @@
+.holahola {
+
+	&__titulo {
+		font-size: 5rem;
+		color: $magentafabuloso;
+		font-family: BebasNeue;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 80%;
+	}
+
+	&__subtitulo {
+		margin: 0;
+		font-size: 3rem;
+		font-family: BebasNeue;
+		font-weight: 500;
+		color: $verdeserio;
+		line-height: 80%;
+	}
+
+	&__parrafo {
+		color: $verdeserio;
+		line-height: 150%;
+		font-size: 1rem;
+		margin: 0 0 15px 0;
+	}
+
+}

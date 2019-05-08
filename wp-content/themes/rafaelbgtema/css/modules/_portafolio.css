@@ -1,6 +1,59 @@
 .portafolio {
+	max-width: 1200px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
 
 	&__unode {
 		margin-bottom: 30px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__titulo {
+		font-size: 4rem;
+		color: $magentafabuloso;
+		font-family: BebasNeue;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 80%;
+	}
+
+	&__categorias {
+		margin: 0;
+		font-size: 3rem;
+		font-family: BebasNeue;
+		font-weight: 500;
+		color: $verdeserio;
+		line-height: 80%;
+	}
+
+	&__descripcion {
+		font-size: 1rem;
+		line-height: 125%;
+	}
+
+	&__informacion {
+		width: 35%;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		padding-left: 30px;
+		transform: translateY(-50%);
+	}
+
+	&__imagen {
+		position: relative;
+		z-index: 1;
+		background-color: red;
+		width: 100%;
+		height: 400px;
+		transition: width ease-out 0.25s;
+	}
+
+	&__unode:hover .portafolio__imagen {
+		width: 65%;
 	}
 }

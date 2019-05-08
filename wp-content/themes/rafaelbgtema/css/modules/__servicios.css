@@ -1,0 +1,22 @@
+.servicios {
+
+	&__unode {
+		margin-bottom: 90px;
+	}
+
+	&__titulo {
+		color: $magentafabuloso;
+		font-family: BebasNeue;
+		font-weight:500;
+		font-size: 4rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__parrafo {
+		color: $verdeserio;
+		line-height: 150%;
+		font-size: 1rem;
+		margin: 0 0 15px 0;
+	}
+}

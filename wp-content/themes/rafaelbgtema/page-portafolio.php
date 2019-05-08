@@ -13,28 +13,46 @@ get_header();
 ?>
 
 
-<div class="portafolio seccion conte conte-fijo">
-	<div class="fila">
-		<?php 
-		// empieza el if //
-		if ($portaQuery->have_posts()) {
-		    // empieza el while //
-		     while ($portaQuery ->have_posts()) {              
-		         $portaQuery ->the_post();
-		?>
-			<div class="col col-12 portafolio__unode">
-				<div style="width: 100%; height: 400px; background-color: red;"></div>
-			</div>
-
+<div class="portafolio seccion">
+	<?php 
+	// empieza el if //
+	if ($portaQuery->have_posts()) {
+		// empieza el while //
+		while ($portaQuery ->have_posts()) {              
+		    $portaQuery ->the_post();
+	?>
+	<div class="portafolio__unode">
+		<div class="portafolio__imagen"></div>
+		<div class="portafolio__informacion">
+			<h1 class="portafolio__titulo">
+				<a href="<?php the_permalink(); ?>">
+					<?php the_title(); ?></h1>
+				</a>
+			<h3 class="portafolio__categorias">
+				<?php
+				$terms = get_the_terms( $post->ID , 'servicios' );
+				$output = '';
+				$separator = ', ';
+				if($terms) {
+					foreach ( $terms as $term ) {
+					$output.= $term->name.$separator;
+				}
+					echo '//'.trim($output, $separator);
+				}
+				?>
+			</h3>
+			<p class="portafolio__descripcion">
+				<?php the_field('proyecto__descripcion') ?>
+			</p>
+		</div>
+	</div>
 		<?php
 			}
 			// termina el while //
 		}
 		// termina el if //
 		?>		
-	</div>
 </div>
-
 
 <?php get_template_part('content/contacto'); ?>
 

@@ -652,7 +652,6 @@ select { /* 1 */
 		    -ms-transform: rotate(-45deg) scaleX(1.3);
 		        transform: rotate(-45deg) scaleX(1.3);
 	}.footer {
-	margin-top: 90px;
 	width: 100%;
 	color: #06262D;
 	border-top: 1px solid rgba(6,38,45, 0.10);
@@ -698,7 +697,11 @@ select { /* 1 */
 	}@media (min-width: 480px) {.footer br {
 			display: none
 	}
-		}/******************/.seccion {
+		}.footer--oscuro {
+	background-color: #06262D;
+	color: white;
+	border-top: 1px solid rgba(0,0,0, 0.25);
+}/******************/.seccion {
 	margin-top: 90px;
 }.portada {
 	background-color: #06262D;
@@ -769,6 +772,10 @@ select { /* 1 */
 		background-color: #06262D;
 		display: inline-block;
 		margin: 0 0 15px 15px;
+	}.titulogeneral--blanco {
+		color: white;
+	}.titulogeneral__dash--blanco {
+		background-color: white;
 	}.portafoliothumbnails__thumb {
 		width: 100%;
 		height: 0;
@@ -778,6 +785,10 @@ select { /* 1 */
 	}.portafoliothumbnails img {
 		width: 100%;
 		height: auto;
+	}.portafoliothumbnails__wrapper--singleproyecto {
+		background-color: #06262D;
+		padding-top: 90px;
+		padding-bottom: 90px;
 	}.formulario__wrapper {
 		margin-bottom: 15px;
 	}.formulario__wrapperparados::after {
@@ -916,6 +927,54 @@ select { /* 1 */
 		line-height: 150%;
 		font-size: 1rem;
 		margin: 0 0 15px 0;
-	}.portafolio__unode {
+	}.portafolio {
+	max-width: 1200px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}.portafolio__unode {
 		margin-bottom: 30px;
-	}
+		position: relative;
+		cursor: pointer;
+	}.portafolio__titulo {
+		font-size: 4rem;
+		color: #D50057;
+		font-family: BebasNeue;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 80%;
+	}.portafolio__categorias {
+		margin: 0;
+		font-size: 3rem;
+		font-family: BebasNeue;
+		font-weight: 500;
+		color: #06262D;
+		line-height: 80%;
+	}.portafolio__descripcion {
+		font-size: 1rem;
+		line-height: 125%;
+	}.portafolio__informacion {
+		width: 35%;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		padding-left: 30px;
+		-webkit-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		        transform: translateY(-50%);
+	}.portafolio__imagen {
+		position: relative;
+		z-index: 1;
+		background-color: red;
+		width: 100%;
+		height: 400px;
+		-webkit-transition: width ease-out 0.25s;
+		-o-transition: width ease-out 0.25s;
+		transition: width ease-out 0.25s;
+	}.portafolio__unode:hover .portafolio__imagen {
+		width: 65%;
+	}.singleproyecto {
+
+}

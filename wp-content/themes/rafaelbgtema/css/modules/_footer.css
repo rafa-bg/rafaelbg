@@ -1,5 +1,4 @@
 .footer {
-	margin-top: 90px;
 	width: 100%;
 	color: $verdeserio;
 	border-top: 1px solid rgba($verdeserio, 0.10);
@@ -64,4 +63,10 @@
 			display: none;
 		}
 	}
+}
+
+.footer--oscuro {
+	background-color: $verdeserio;
+	color: white;
+	border-top: 1px solid rgba(#000000, 0.25);
 }

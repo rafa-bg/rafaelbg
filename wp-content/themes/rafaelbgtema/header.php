@@ -9,6 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class()?> >
+
 	<div class="menuprincipal">
 		<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="menuprincipal__logo">
 
@@ -57,10 +58,10 @@
 					<a href="#">
 						<i class="fab fa-instagram barranavegacion__social__item"></i>
 					</a>
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fab fa-facebook-messenger barranavegacion__social__item"></i>
 					</a>
-					<a href="#">
+					<a href="https://api.whatsapp.com/send?phone=525554646711&text=%C2%A1Hola,%20Rafael!%20Quiero%20contarte%20de%20mi%20proyecto." target="_blank">
 						<i class="fab fa-whatsapp barranavegacion__social__item"></i>
 					</a>
 				</div>

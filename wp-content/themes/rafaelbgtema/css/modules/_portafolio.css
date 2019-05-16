@@ -1,24 +1,28 @@
 .portafolio {
-	max-width: 1200px;
-	padding-left: 30px;
-	padding-right: 30px;
+	max-width: 1270px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
 
 	&__unode {
 		margin-bottom: 30px;
 		position: relative;
-		cursor: pointer;
 	}
 
 	&__titulo {
 		font-size: 4rem;
-		color: $magentafabuloso;
 		font-family: BebasNeue;
 		font-weight: 500;
 		margin: 0;
 		padding: 0;
-		line-height: 80%;
+		line-height: 100%;
+		color: $magentafabuloso;
+		transition: color ease-in-out 0.2s;
+	}
+
+	&__titulo:hover {
+		color: $verdeserio;
 	}
 
 	&__categorias {
@@ -44,16 +48,23 @@
 		transform: translateY(-50%);
 	}
 
-	&__imagen {
+	&__wrapperimagen {
 		position: relative;
 		z-index: 1;
-		background-color: red;
 		width: 100%;
-		height: 400px;
-		transition: width ease-out 0.25s;
+		height: 465px;
+		transition: width ease-in-out 0.25s;
+		overflow: hidden;
 	}
 
-	&__unode:hover .portafolio__imagen {
+	&__unode:hover .portafolio__wrapperimagen {
 		width: 65%;
+	}
+
+	&__imagen {
+		position: absolute;
+		top: 0;
+		right: 50%;
+		transform: translateX(50%);
 	}
 }

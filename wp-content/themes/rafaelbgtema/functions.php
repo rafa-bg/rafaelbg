@@ -4,6 +4,11 @@ function rafaelBGSetup() {
 	//title
 	add_theme_support( 'title-tag' );
   add_theme_support('post-thumbnails');
+  //tamaños de imagen
+  add_image_size('portafolio-horizontal', 1240, 465, true); 
+  add_image_size('portafolio-horizontal-hdpi', 2480, 930, true); 
+  add_image_size('portafolio-cuadrado', 465, 465, true); 
+  add_image_size('portafolio-cuadrado-hdpi', 930, 930, true); 
 }
 
 add_action('after_setup_theme', 'rafaelBGSetup');

@@ -42,7 +42,7 @@ get_header();
 <div class="portafoliothumbnails seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
-			<h1 class="titulogeneral">¡Ve mi trabajo! <span class="titulogeneral__dash"></span></h1>
+			<h1 class="titulogeneral"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">¡Ve mi trabajo!</a> <span class="titulogeneral__dash"></span></h1>
 		</div>
 		<div class="col-contenido fila">
 			<?php 
@@ -53,9 +53,8 @@ get_header();
 			         $portaQuery ->the_post();
 			?>
 			<div class="col col-xl-4">
-				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail(); ?>
-				</a>
+
+					<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
 			</div>
 			<?php
 				}

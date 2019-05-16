@@ -22,7 +22,10 @@ get_header();
 		    $portaQuery ->the_post();
 	?>
 	<div class="portafolio__unode">
-		<div class="portafolio__imagen"></div>
+		<div class="portafolio__wrapperimagen">
+			<img sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" alt="<?php the_title(); ?>" class="portafolio__imagen">
+
+		</div>
 		<div class="portafolio__informacion">
 			<h1 class="portafolio__titulo">
 				<a href="<?php the_permalink(); ?>">
@@ -44,6 +47,10 @@ get_header();
 			<p class="portafolio__descripcion">
 				<?php the_field('proyecto__descripcion') ?>
 			</p>
+			<?php
+				echo $proyectoImagenLarga;
+				echo $proyectoImagenLargaHdpi;
+			?>
 		</div>
 	</div>
 		<?php

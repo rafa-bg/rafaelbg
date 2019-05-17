@@ -8,17 +8,19 @@ get_header();
 		</div>
 		<div class="col col-6">
 			<h1 class="unproyecto__titulo"><?php the_title(); ?></h1>
-			<?php
-			$terms = get_the_terms( $post->ID , 'servicios' );
-			$output = '';
-			$separator = ', ';
-			if($terms) {
-				foreach ( $terms as $term ) {
-				$output.= $term->name.$separator;
-			}
-				echo '//'.trim($output, $separator);
-			}
-			?>
+			<h3 class="unproyecto__categorias">
+				<?php
+				$terms = get_the_terms( $post->ID , 'servicios' );
+				$output = '';
+				$separator = ', ';
+				if($terms) {
+					foreach ( $terms as $term ) {
+					$output.= $term->name.$separator;
+				}
+					echo '//'.trim($output, $separator);
+				}
+				?>
+			</h3>
 
 			<div class="unproyecto__intro">
 				<?php the_field('proyecto__intro'); ?>
@@ -56,8 +58,9 @@ get_header();
 				         $portaQuery ->the_post();
 				?>
 				<div class="col col-xl-4">
-
+					<a href="<?php the_permalink(); ?>">
 						<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
+					</a>
 				</div>
 				<?php
 					}

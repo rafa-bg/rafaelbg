@@ -53,8 +53,9 @@ get_header();
 			         $portaQuery ->the_post();
 			?>
 			<div class="col col-xl-4">
-
+				<a href="<?php the_permalink(); ?>">
 					<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
+				</a>
 			</div>
 			<?php
 				}

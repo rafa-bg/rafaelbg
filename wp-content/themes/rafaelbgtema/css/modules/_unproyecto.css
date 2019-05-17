@@ -1,4 +1,5 @@
 .unproyecto {
+	margin-bottom: 90px;
 
 	&__titulo {
 		color: $magentafabuloso;
@@ -7,5 +8,42 @@
 		font-weight: 500;
 		font-size: 4rem;
 		margin: 0;
+		transform: translateX(-4rem);
+	}
+
+	&__categorias {
+		margin: 0;
+		font-size: 3rem;
+		font-family: BebasNeue;
+		font-weight: 500;
+		color: #06262D;
+		line-height: 80%;
+	}
+
+	&__intro {
+		line-height: 125%;
+		margin-top: 30px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&__creditos {
+		border-top: 3px solid $magentafabuloso;
+		line-height: 125%;
+
+		strong {
+			color: $magentafabuloso
+		}
+
+		a {
+			color: inherit;
+			transition: color ease 0.25s;
+		}
+
+		a:hover {
+			color: $magentafabuloso
+		}
 	}
 }

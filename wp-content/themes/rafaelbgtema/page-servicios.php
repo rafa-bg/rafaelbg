@@ -8,10 +8,10 @@ get_header();
 <div class="servicios seccion conte conte-fijo">
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-6">
-			<div style="width: 100%; height: 392px; background-color: red;"></div>
+		<div class="col col-5">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__web.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__web-hdpi.png') ?> 600w" alt="" class="servicios__icono">
 		</div>
-		<div class="col col-6">
+		<div class="col col-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Sitios Web
 			</h1>
@@ -24,10 +24,11 @@ get_header();
 
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-6">
-			<div style="width: 100%; height: 392px; background-color: red;"></div>
+		<div class="col col-5">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__branding.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__branding-hdpi.png') ?> 600w" alt="" class="servicios__icono">
+
 		</div>
-		<div class="col col-6">
+		<div class="col col-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Branding
 			</h1>
@@ -40,10 +41,10 @@ get_header();
 
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-6">
-			<div style="width: 100%; height: 392px; background-color: red;"></div>
+		<div class="col col-5">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__diseno.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__diseno-hdpi.png') ?> 600w" alt="" class="servicios__icono">
 		</div>
-		<div class="col col-6">
+		<div class="col col-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Diseño Gráfico
 			</h1>

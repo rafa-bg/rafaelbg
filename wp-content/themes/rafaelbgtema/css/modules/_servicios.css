@@ -4,6 +4,12 @@
 		margin-bottom: 90px;
 	}
 
+	&__textowrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__titulo {
 		color: $magentafabuloso;
 		font-family: BebasNeue;
@@ -17,6 +23,14 @@
 		color: $verdeserio;
 		line-height: 150%;
 		font-size: 1rem;
-		margin: 0 0 15px 0;
+		margin: 0 0 0 0;
+		padding-bottom: 30px;
+	}
+
+	&__icono {
+		width: 300px;
+		height: auto;
+		margin: auto; 
+		display: block;
 	}
 }

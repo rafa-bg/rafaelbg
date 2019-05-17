@@ -61,6 +61,18 @@ get_header();
 		?>		
 </div>
 
+<div class="testimoniales seccion conte conte-fijo">
+	<div class="fila fila--titulovertical">
+		<div class="col-titulo titulogeneral__wrapper">
+			<h1 class="titulogeneral">Mis clientes dicen <span class="titulogeneral__dash"></span></h1>
+		</div>
+		<div class="col-contenido fila">
+			<div style="width: 100%; height: 500px;"></div>
+		</div>
+	</div>
+</div>
+
+
 <?php get_template_part('content/contacto'); ?>
 
 <?php

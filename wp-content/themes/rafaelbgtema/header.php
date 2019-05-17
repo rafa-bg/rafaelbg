@@ -23,16 +23,16 @@
 
 		<div class="menuprincipal__footer">
 			<div class="menuprincipal__social">
-				<a href="#">
+				<a href="https://www.facebook.com/rafaelbg.dyd" target="_blank">
 					<i class="fab fa-facebook menuprincipal__social__item"></i>
 				</a>
-				<a href="#">
+				<a href="https://www.instagram.com/rafael.bg.dyd/" target="_blank">
 					<i class="fab fa-instagram menuprincipal__social__item"></i>
 				</a>
-				<a href="#">
+				<a href="http://m.me/rafaelbg.dyd">
 					<i class="fab fa-facebook-messenger menuprincipal__social__item"></i>
 				</a>
-				<a href="#">
+				<a href="https://api.whatsapp.com/send?phone=525554646711&text=%C2%A1Hola,%20Rafael!%20Quiero%20contarte%20de%20mi%20proyecto.">
 					<i class="fab fa-whatsapp menuprincipal__social__item"></i>
 				</a>
 			</div>
@@ -52,13 +52,13 @@
 				</div>
 
 				<div class="barranavegacion__social">
-					<a href="#">
+					<a href="https://www.facebook.com/rafaelbg.dyd" target="_blank">
 						<i class="fab fa-facebook barranavegacion__social__item"></i>
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/rafael.bg.dyd/" target="_blank">
 						<i class="fab fa-instagram barranavegacion__social__item"></i>
 					</a>
-					<a href="#" target="_blank">
+					<a href="http://m.me/rafaelbg.dyd" target="_blank">
 						<i class="fab fa-facebook-messenger barranavegacion__social__item"></i>
 					</a>
 					<a href="https://api.whatsapp.com/send?phone=525554646711&text=%C2%A1Hola,%20Rafael!%20Quiero%20contarte%20de%20mi%20proyecto." target="_blank">

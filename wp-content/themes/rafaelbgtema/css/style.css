@@ -22,3 +22,7 @@
 @import "modules/_servicios";
 @import "modules/_portafolio";
 @import "modules/_singleproyecto";
+/******************/
+@import "modules/_testimoniales";
+/******************/
+@import "modules/_unproyecto";

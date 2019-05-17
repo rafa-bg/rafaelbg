@@ -18,7 +18,7 @@
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Sobre mi</a></li>
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/servicios')) ?>">Servicios</a></li>
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">Portafolio</a></li>
-			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/contacto')) ?>">Contacto</a></li>
+			<li class="menuprincipal__vinculo"><a href="#">Contacto</a></li>
 		</ul>
 
 		<div class="menuprincipal__footer">
@@ -37,9 +37,9 @@
 				</a>
 			</div>
 
-			<a href="#" class="menuprincipal__footer__item">hola@rafaelbg.com</a>
+			<a href="mailto:hola@rafaelbg.com" class="menuprincipal__footer__item">hola@rafaelbg.com</a>
 			<span class="menuprincipal__footer__separador">|</span>
-			<a href="#" class="menuprincipal__footer__item">55 5464 6711</a>
+			<a href="tel:5554646711" class="menuprincipal__footer__item">55 5464 6711</a>
 		</div>
 		
 			<div class="barranavegacion">

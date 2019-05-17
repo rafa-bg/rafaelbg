@@ -1,5 +1,7 @@
 <?php 
 get_header();
+while(have_posts()) {
+the_post();
 ?>
 <div class="portada">
 	<h1 class="portada__titulo">Servicios</h1>
@@ -64,5 +66,6 @@ get_header();
 <?php get_template_part('content/contacto'); ?>
 
 <?php
+}
 get_footer();
 ?>

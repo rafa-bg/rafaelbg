@@ -1,4 +1,4 @@
-<div class="contacto seccion conte conte-fijo">
+<div id="contacto" class="contacto seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">¡Mándame un mensaje!<span class="titulogeneral__dash"></span></h1>

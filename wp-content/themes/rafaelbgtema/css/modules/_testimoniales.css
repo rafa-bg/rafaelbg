@@ -1,0 +1,105 @@
+.testimoniales {
+
+	&__slider {
+		padding-left: 30px;
+		padding-right: 30px;
+		position: relative;
+	}
+
+	&__wrapper {
+		padding: 0 65px 0 45px;
+	}
+	
+	&__unode {
+		background-color: #F9FAFA;
+		border-radius: 10px;
+		padding: 30px 50px 30px 50px;
+		position: relative;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+
+	&__cita {
+		font-size: 1.125rem;
+		line-height: 125%;
+	}
+
+	&__icono {
+		color: $magentafabuloso !important;
+		margin: 0;
+		font-size: 3rem !important;
+		position: absolute;
+		top: 30px;
+		left: -30px;
+	}
+
+	&__foto {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+	}
+
+	&__nombreyquees {
+		text-align: right;
+		margin-right: 30px;
+	}
+
+	&__nombre {
+		margin: 0;
+		color: $verdeserio;
+	}
+
+	&__quees {
+		margin: 0;
+		color: $magentafabuloso;
+	}
+
+	&__datos {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		transform: translateX(90px);
+	}
+
+	.swiper-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+
+.testimoniales__flecha {
+	position: absolute;
+	top: calc(50% - 10px);
+	cursor: pointer;
+	transform: rotate(45deg);
+	width: 20px;
+	height: 20px;
+	display: block;
+	transition: all ease 0.25s;
+
+	&:focus {
+		outline: none;
+	}
+
+	&--izquierda {
+		left: 5px;
+		border-bottom: 5px solid $magentafabuloso;
+		border-left: 5px solid $magentafabuloso;
+
+		&:hover {
+			border-bottom: 5px solid $magentarojo;
+			border-left: 5px solid $magentarojo;
+		}
+	}
+
+	&--derecha {
+		right: 5px;
+		border-top: 5px solid $magentafabuloso;
+		border-right: 5px solid $magentafabuloso;
+
+		&:hover {
+			border-top: 5px solid $magentarojo;
+			border-right: 5px solid $magentarojo;
+		}
+	}
+}

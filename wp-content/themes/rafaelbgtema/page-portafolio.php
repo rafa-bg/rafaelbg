@@ -47,10 +47,6 @@ get_header();
 			<p class="portafolio__descripcion">
 				<?php the_field('proyecto__descripcion') ?>
 			</p>
-			<?php
-				echo $proyectoImagenLarga;
-				echo $proyectoImagenLargaHdpi;
-			?>
 		</div>
 	</div>
 		<?php
@@ -60,38 +56,86 @@ get_header();
 		// termina el if //
 		?>		
 </div>
-<!--
+
 <div class="testimoniales seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
-			<h1 class="titulogeneral">Mis clientes dicen <span class="titulogeneral__dash"></span></h1>
+			<h1 class="titulogeneral">Testimoniales <span class="titulogeneral__dash"></span></h1>
 		</div>
-		<div class="col-contenido fila">
-			<div style="width: 100%; height: 500px;"></div>
+		<div class="col-contenido fila testimoniales__slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!--slides--->
+					<div class="testimoniales__wrapper swiper-slide">
+						<div class="testimoniales__unode">
+							<i class="fas fa-quote-left testimoniales__icono"></i>
+							<div class="testimoniales__cita">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui mi, molestie vitae efficitur a, porttitor ut lorem. Duis eget condimentum mi, at rutrum felis. Proin vel est elementum, sodales turpis a, mattis justo. Duis lobortis turpis finibus augue dignissim, eu iaculis urna.
+							</div>
+							<div class="testimoniales__datos">
+								<div class="testimoniales__nombreyquees">
+									<h3 class="testimoniales__nombre">
+										Julieta Martínez
+									</h3>
+									<h3 class="testimoniales__quees">
+										// Inspira Soul
+									</h3>
+								</div>
+								<img src="<?php echo get_theme_file_uri('/img/testimonial__jm.jpg') ?>" alt="" class="testimoniales__foto">
+							</div>
+							
+						</div>
+					</div>
+					<!--slides--->
+					<div class="testimoniales__wrapper swiper-slide">
+						<div class="testimoniales__unode">
+							<i class="fas fa-quote-left testimoniales__icono"></i>
+							<div class="testimoniales__cita">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui mi, molestie vitae efficitur a, porttitor ut lorem. Duis eget condimentum mi, at rutrum felis. Proin vel est elementum, sodales turpis a, mattis justo. Duis lobortis turpis finibus augue dignissim, eu iaculis urna.
+							</div>
+							<div class="testimoniales__datos">
+								<div class="testimoniales__nombreyquees">
+									<h3 class="testimoniales__nombre">
+										Violeta Martinez
+									</h3>
+									<h3 class="testimoniales__quees">
+										// Diseñadora Gráfica
+									</h3>
+								</div>
+								<img src="<?php echo get_theme_file_uri('/img/testimonial__vm.jpg') ?>" alt="" class="testimoniales__foto">
+							</div>
+							
+						</div>
+					</div>
+					<!--slides--->
+					<div class="testimoniales__wrapper swiper-slide">
+						<div class="testimoniales__unode">
+							<i class="fas fa-quote-left testimoniales__icono"></i>
+							<div class="testimoniales__cita">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dui mi, molestie vitae efficitur a, porttitor ut lorem. Duis eget condimentum mi, at rutrum felis. Proin vel est elementum, sodales turpis a, mattis justo. Duis lobortis turpis finibus augue dignissim, eu iaculis urna.
+							</div>
+							<div class="testimoniales__datos">
+								<div class="testimoniales__nombreyquees">
+									<h3 class="testimoniales__nombre">
+										Lorena Leo Nava
+									</h3>
+									<h3 class="testimoniales__quees">
+										// Agencia LOCA
+									</h3>
+								</div>
+								<img src="<?php echo get_theme_file_uri('/img/testimonial__lln.jpg') ?>" alt="" class="testimoniales__foto">
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--navegacion-->
+			<span class="testimoniales__flecha testimoniales__flecha--izquierda"></span>
+			<span class="testimoniales__flecha testimoniales__flecha--derecha"></span>
+			<!--navegacion-->
 		</div>
 	</div>
-</div>
--->
-
-<!-- Slider main container -->
-<div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
 </div>
 
 

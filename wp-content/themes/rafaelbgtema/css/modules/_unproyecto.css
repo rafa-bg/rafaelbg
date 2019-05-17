@@ -1,0 +1,11 @@
+.unproyecto {
+
+	&__titulo {
+		color: $magentafabuloso;
+		text-transform: uppercase;
+		font-family: BebasNeue;
+		font-weight: 500;
+		font-size: 4rem;
+		margin: 0;
+	}
+}

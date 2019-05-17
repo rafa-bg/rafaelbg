@@ -33,3 +33,9 @@ body {
 		min-height: calc(100vh - 79px);
 	}
 }
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+}

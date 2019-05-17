@@ -60,7 +60,7 @@ get_header();
 		// termina el if //
 		?>		
 </div>
-
+<!--
 <div class="testimoniales seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
@@ -70,6 +70,28 @@ get_header();
 			<div style="width: 100%; height: 500px;"></div>
 		</div>
 	</div>
+</div>
+-->
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 
 

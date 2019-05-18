@@ -28,6 +28,9 @@
 	}
 
 	&__titulo {
+		font-family: BebasNeue;
+		font-weight: 500;
+		font-size: 8rem;
 		color: white;
 		margin: 0;
 		padding: 0;

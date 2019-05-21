@@ -1,5 +1,7 @@
 .portada {
-	background-color: $verdeserio;
+	background-color: $verdenegro;
+	position: relative;
+	overflow: hidden;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -13,11 +15,12 @@
 	}
 
 	&__logo {
-		width: 60%;
-		max-width: 350px;
+		width: 360px;
 		display: block;
 		margin: 0 auto;
-		transform: translateX(-5%);
+		transform: translateX(0);
+		position: relative;
+		z-index: 2;
 	}
 
 	&__nombre {
@@ -25,6 +28,9 @@
 		max-width: 350px;
 		display: block;
 		margin: 60px auto 0 auto;
+		transform: translateX(17px);
+		position: relative;
+		z-index: 2;
 	}
 
 	&__titulo {
@@ -34,8 +40,41 @@
 		color: white;
 		margin: 0;
 		padding: 0;
+		text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 		text-transform: uppercase;
 		display: inline-block;
 		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__circulos {
+		width: 1920px;
+		height: auto;
+		opacity: 1;
+		mix-blend-mode: overlay;
+		position: absolute;
+		left: 50%;
+		top: calc(50% - 97px);
+		transform: translate3d(-50%, -50%, 0);
+		z-index: 1;
+	}
+
+	&__fondo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		z-index: 0;
+	}
+
+	&__elemento {
+		width: 600px;
+		height: 600px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+		z-index: 1;
 	}
 }

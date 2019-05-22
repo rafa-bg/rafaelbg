@@ -6,9 +6,9 @@ the_post();
 	
 
 <div class="portada">
-		<h1 class="portada__titulo">Servicios</h1>
-		<img src="<?php echo get_theme_file_uri('img/luna.png'); ?>" alt="RAFAEL//BG" class="portada__elemento">
-		<img src="<?php echo get_theme_file_uri('/img/fondo-1920.jpg') ?>" alt="Rafaelbg" class="portada__fondo">
+	<h1 class="portada__titulo">Servicios</h1>
+	<img src="<?php echo get_theme_file_uri('img/luna.png'); ?>" alt="RAFAEL//BG" class="portada__luna">
+	<img src="<?php echo get_theme_file_uri('/img/fondo-1920.jpg') ?>" alt="Rafaelbg" class="portada__fondo">
 </div>
 
 

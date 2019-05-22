@@ -3,6 +3,8 @@ get_header();
 ?>
 <div class="portada">
 	<h1 class="portada__titulo">Portafolio</h1>
+	<img src="<?php echo get_theme_file_uri('img/icosaedro.png'); ?>" alt="RAFAEL//BG" class="portada__icosaedro">
+	<img src="<?php echo get_theme_file_uri('/img/fondo-1920.jpg') ?>" alt="Rafaelbg" class="portada__fondo">
 </div>
 
 <?php

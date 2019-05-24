@@ -718,6 +718,20 @@ select { /* 1 */
 }@media (min-width: 576px) {.portada {
 		padding-top: 0px
 }
+	}.portada--portadaprincipal {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}.portada__logo {
 		width: 360px;
 		display: block;
@@ -757,7 +771,7 @@ select { /* 1 */
 	}.portada__circulos {
 		width: 1920px;
 		height: auto;
-		opacity: 1;
+		opacity: 0.75;
 		mix-blend-mode: overlay;
 		position: absolute;
 		left: 50%;
@@ -778,8 +792,8 @@ select { /* 1 */
 		position: absolute;
 		left: 50%;
 		top: calc(50% - 20px);
-		-webkit-transform: translate3d(-50%, -50%, 0) rotate(165deg);
-		        transform: translate3d(-50%, -50%, 0) rotate(165deg);
+		-webkit-transform: translate3d(-50%, -50%, 0) rotate(-15deg);
+		        transform: translate3d(-50%, -50%, 0) rotate(-15deg);
 		z-index: 1;
 	}.portada__icosaedro {
 		width: 650px;

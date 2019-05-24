@@ -9,6 +9,13 @@
 		padding-top: 0px;
 	}
 
+	&--portadaprincipal {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__logo {
 		width: 360px;
 		display: block;
@@ -49,7 +56,7 @@
 	&__circulos {
 		width: 1920px;
 		height: auto;
-		opacity: 1;
+		opacity: 0.75;
 		mix-blend-mode: overlay;
 		position: absolute;
 		left: 50%;
@@ -72,7 +79,7 @@
 		position: absolute;
 		left: 50%;
 		top: calc(50% - 20px);
-		transform: translate3d(-50%, -50%, 0) rotate(165deg);
+		transform: translate3d(-50%, -50%, 0) rotate(-15deg);
 		z-index: 1;
 	}
 

@@ -7,8 +7,14 @@ the_post();
 
 <div class="portada">
 	<h1 class="portada__titulo">Servicios</h1>
-	<img src="<?php echo get_theme_file_uri('img/luna.png'); ?>" alt="RAFAEL//BG" class="portada__luna">
-	<img src="<?php echo get_theme_file_uri('/img/fondo-1920.jpg') ?>" alt="Rafaelbg" class="portada__fondo">
+	<img sizes="600px" srcset="<?php echo get_theme_file_uri('img/portada__luna.png'); ?> 600w, <?php echo get_theme_file_uri('img/portada__luna-hdpi.png') ?> 1200w" alt="" class="portada__luna">
+	<picture>
+		<source sizes="2560px" srcset="<?php echo get_theme_file_uri('img/fondo-2560.jpg') ?> 2560w, <?php echo get_theme_file_uri('img/fondo-2560-hdpi.jpg') ?> 5120w" media="(min-width: 2000px)">
+
+		<source sizes="1920px" srcset="<?php echo get_theme_file_uri('img/fondo-1920.jpg') ?> 1920w, <?php echo get_theme_file_uri('img/fondo-1920-hdpi.jpg') ?> 3840w" media="(min-width: 992px)">
+
+		<img srcset="<?php echo get_theme_file_uri('img/fondo-992.jpg') ?> 992w, <?php echo get_theme_file_uri('img/fondo-992-hdpi.jpg') ?> 1984w" class="portada__fondo" alt="Rafael//BG">
+	</picture>
 </div>
 
 

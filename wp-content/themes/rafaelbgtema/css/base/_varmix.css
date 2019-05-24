@@ -46,3 +46,9 @@ $verdenegro: #03181D;
 		@mixin-content;
 	}
 }
+
+@define-mixin 1920_px {
+	@media (min-width: 1920px) {
+		@mixin-content;
+	}
+}

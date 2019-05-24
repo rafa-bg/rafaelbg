@@ -2,11 +2,17 @@
 get_header();
 ?>
 
-<div class="portada">
+<div class="portada portada--portadaprincipal">
 	<img src="<?php echo get_theme_file_uri('img/rcirculo.svg'); ?>" alt="RAFAEL//BG" class="portada__logo">
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="RAFAEL//BG" class="portada__nombre">
 	<img src="<?php echo get_theme_file_uri('/img/portada__circulos') ?>" alt="Rafaelbg" class="portada__circulos">
-	<img src="<?php echo get_theme_file_uri('/img/fondo-1920.jpg') ?>" alt="Rafaelbg" class="portada__fondo">
+	<picture>
+		<source sizes="2560px" srcset="<?php echo get_theme_file_uri('img/fondo-2560-i.jpg') ?> 2560w, <?php echo get_theme_file_uri('img/fondo-2560-hdpi-i.jpg') ?> 5120w" media="(min-width: 2000px)">
+
+		<source sizes="1920px" srcset="<?php echo get_theme_file_uri('img/fondo-1920-i.jpg') ?> 1920w, <?php echo get_theme_file_uri('img/fondo-1920-hdpi-i.jpg') ?> 3840w" media="(min-width: 997px)">
+
+		<img srcset="<?php echo get_theme_file_uri('img/fondo-992-i.jpg') ?> 992w, <?php echo get_theme_file_uri('img/fondo-992-hdpi-i.jpg') ?> 1984w" class="portada__fondo" alt="Rafael//BG">
+	</picture>
 </div>
 
 

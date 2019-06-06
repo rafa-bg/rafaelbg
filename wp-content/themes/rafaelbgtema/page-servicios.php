@@ -68,12 +68,7 @@ the_post();
 	</div>
 	<!---->
 </div>
-
-<div class="calltoaction">
-	<img src="<?php echo get_theme_file_uri('/img/rcirculo.svg') ?>" alt="Rafael BG" class="calltoaction__logo">
-	<h1 class="calltoaction__titulo">Hablemos de tu proyecto</h1>
-</div>
-
+<?php get_template_part('content/calltoaction'); ?>
 <?php get_template_part('content/contacto'); ?>
 
 <?php

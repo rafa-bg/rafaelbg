@@ -235,13 +235,7 @@ select { /* 1 */
 	}@media (min-width: 768px) {.wrappergeneral {
 		min-height: calc(100vh - 79px)
 }
-	}/*
-.swiper-container {
-    width: 600px;
-    height: 300px;
-    background-color: red;
-}
-*/.fila {
+	}.fila {
 	margin-right: -30px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -708,7 +702,7 @@ select { /* 1 */
 	color: white;
 	border-top: 1px solid rgba(0,0,0, 0.25);
 }/******************/.seccion {
-	margin-top: 90px;
+	margin-top: 150px;
 }.portada {
 	background-color: #03181D;
 	position: relative;
@@ -845,8 +839,8 @@ select { /* 1 */
 		margin: auto;
 	}.portafoliothumbnails__wrapper--singleproyecto {
 		background-color: #06262D;
-		padding-top: 90px;
-		padding-bottom: 90px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 	}.formulario__wrapper {
 		margin-bottom: 15px;
 	}.formulario__wrapperparados::after {
@@ -945,7 +939,6 @@ select { /* 1 */
 		    -ms-transform: rotate(-5deg);
 		        transform: rotate(-5deg);
 	}.calltoaction {
-	background-color: #06262D;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -957,19 +950,32 @@ select { /* 1 */
 	        align-items: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-top: 135px;
-	margin-bottom: 135px;
-}.calltoaction__titulo {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	position: relative;
+	overflow: hidden;
+}.calltoaction__fondo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		        transform: translate3d(-50%, -50%, 0);
+		z-index: 0;
+	}.calltoaction__titulo {
 		margin: 0;
 		color: white;
 		font-family: BebasNeue;
 		font-weight:500;
-		font-size: 4rem;
+		font-size: 4.5rem;
 		margin: 0 30px;
+		position: relative;
+		z-index: 1;
 	}.calltoaction__logo {
 		height: auto;
-		width: 185px;
+		width: 200px;
 		margin: 0 30px;
+		position: relative;
+		z-index: 1;
 	}/******************/.holahola__titulo {
 		font-size: 5rem;
 		color: #D50057;
@@ -977,14 +983,14 @@ select { /* 1 */
 		font-weight: 500;
 		margin: 0;
 		padding: 0;
-		line-height: 80%;
+		line-height: 100%;
 	}.holahola__subtitulo {
-		margin: 0;
+		margin: 0 0 15px 0;
 		font-size: 3rem;
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: #06262D;
-		line-height: 80%;
+		line-height: 100%;
 	}.holahola__parrafo {
 		color: #06262D;
 		line-height: 150%;

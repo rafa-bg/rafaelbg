@@ -7,16 +7,16 @@
 		font-weight: 500;
 		margin: 0;
 		padding: 0;
-		line-height: 80%;
+		line-height: 100%;
 	}
 
 	&__subtitulo {
-		margin: 0;
+		margin: 0 0 15px 0;
 		font-size: 3rem;
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: $verdeserio;
-		line-height: 80%;
+		line-height: 100%;
 	}
 
 	&__parrafo {

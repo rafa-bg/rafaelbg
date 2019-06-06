@@ -37,14 +37,17 @@ get_header();
 
 
 <?php
+	$idDelPost = get_the_id();
     $portaQuery = new WP_Query(array(              
-      'posts_per_page' => 3,
-      'post_type' => 'proyectos',
+    	'posts_per_page' => 3,
+    	'post_type' => 'proyectos',
+    	'orderby' => 'rand',
+    	'post__not_in' => array($idDelPost),
     ));  
 ?>
 
 <div class="portafoliothumbnails__wrapper--singleproyecto">
-	<div class="portafoliothumbnails seccion conte conte-fijo">
+	<div class="portafoliothumbnails conte conte-fijo">
 		<div class="fila fila--titulovertical">
 			<div class="col-titulo titulogeneral__wrapper">
 				<h1 class="titulogeneral titulogeneral--blanco"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">¡Aún hay más!</a> <span class="titulogeneral__dash titulogeneral__dash--blanco"></span></h1>

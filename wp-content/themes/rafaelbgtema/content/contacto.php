@@ -40,8 +40,8 @@
 
 				</form>
 			</div>
-			<div class="col col-xl-5">
-				<div style="background-color: red; width: 100%; height: 200px;"></div>
+			<div class="col col-xl-5 contacto__imagenwrapper">
+				<img src="<?php echo get_theme_file_uri('/img/piramides.png') ?>" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide">
 			</div>
 		</div>
 	</div>

@@ -5,4 +5,16 @@
 		color: rgba($verdenegro, 0.85);
 		font-size: 1rem;
 	}
+
+	&__imagenwrapper {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__piramide {
+		width: 90%;
+		height: auto;
+		transform: rotate(-5deg);
+	}
 }

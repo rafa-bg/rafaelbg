@@ -23,7 +23,12 @@ get_header();
 			</h3>
 
 			<div class="unproyecto__intro">
-				<?php the_field('proyecto__intro'); ?>
+				<?php the_field('proyecto__descripcion') ?>
+				<?php if ( get_field('proyecto__url') ) { ?>
+				<br><br>
+				<a href="<?php the_field('proyecto__url') ?>" class="unproyecto__visitarsitio" target="_blank">Visitar sitio</a>
+				<?php
+				}?>
 			</div>
 			<div class="unproyecto__creditos">
 				<?php the_field('proyecto__creditos'); ?>
@@ -35,6 +40,28 @@ get_header();
 	</div>
 </div>
 
+<div class="compartir">
+	<span class="fa-stack fa-lg compartir__icono">
+		<i class="fa fa-circle fa-stack-2x"></i>
+		<a href="<?php echo 'https://www.facebook.com/sharer/sharer.php?u='.get_the_permalink(); ?>" onclick="window.open(this.href, 'windowName', 'width=672, height=400, left=24, top=24, scrollbars, resizable'); return false;">
+	 		<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+		</a>
+	</span>
+
+	<span class="fa-stack fa-lg compartir__icono">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <a href="<?php echo 'https://api.whatsapp.com/send?text=Rafael//BG - '.get_the_title().'%20-%20'.get_the_permalink(); ?>" class="" target="_blank">
+	  	<i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+	  </a>
+	</span>
+
+	<span class="fa-stack fa-lg compartir__icono">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <a href="<?php echo 'https://twitter.com/intent/tweet?url='.get_the_permalink().'&amp;text=Rafael//BG - '.get_the_title() ?>">
+	  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+		</a>
+	</span>
+</div>
 
 <?php
 	$idDelPost = get_the_id();

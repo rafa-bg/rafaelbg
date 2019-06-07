@@ -1,4 +1,4 @@
-<div class="calltoaction">
+<div id="contacto" class="calltoaction <?php if(is_page('contacto')) { echo 'calltoaction--contacto';} ?> ">
 	<img src="<?php echo get_theme_file_uri('/img/rcirculo.svg') ?>" alt="Rafael BG" class="calltoaction__logo">
 	<h1 class="calltoaction__titulo">Hablemos de tu proyecto</h1>
 	<picture>

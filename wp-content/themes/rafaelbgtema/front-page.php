@@ -17,6 +17,7 @@ get_header();
 
 
 <div class="holahola seccion conte conte-fijo">
+	<div class="holahola__ancla" id="sobremi"></div>
 	<div class="fila fila--titulovertical">
 		<div class="col col-5">
 			<div style="height: 630px; width: 100%; background-color: red;"></div>

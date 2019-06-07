@@ -1,12 +1,14 @@
-<div id="contacto" class="contacto seccion conte conte-fijo">
+<div class="contacto seccion conte conte-fijo">
 	<div class="fila fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">¡Mándame un mensaje!<span class="titulogeneral__dash"></span></h1>
 		</div>
 		<div class="col-contenido fila">
-			<div class="col col-xl-7">
+			<div class="col col-xl-7 contacto__formularioycopywrapper">
 				<p class="contacto__parrafo">
-					¿Te gustó mi trabajo? Ponte en contacto 😉
+					¿Te gustó mi trabajo? ¡Ponte en contacto! 😉
+					<br><br>
+					Cuéntame tus ideas. Manda un mensaje usando el formulario de contacto que esta debajo. 
 				</p>
 				<form action="">
 					<div class="formulario__wrapper">
@@ -41,7 +43,10 @@
 				</form>
 			</div>
 			<div class="col col-xl-5 contacto__imagenwrapper">
-				<img src="<?php echo get_theme_file_uri('/img/piramides.png') ?>" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide">
+				<img sizes="600px" srcset="<?php echo get_theme_file_uri('/img/piramides.png'); ?> 600w, <?php echo get_theme_file_uri('/img/piramides-hdpi.png') ?> 1200w" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide">
+				<img sizes="600px" srcset="<?php echo get_theme_file_uri('/img/piramides--sombra.png'); ?> 600w, <?php echo get_theme_file_uri('/img/piramides--sombra-hdpi.png') ?> 1200w" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide--sombra">
+
+
 			</div>
 		</div>
 	</div>

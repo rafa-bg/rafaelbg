@@ -37,3 +37,8 @@
 		z-index: 1;
 	}
 }
+
+.calltoaction.calltoaction--contacto {
+	margin-top: 0px;
+	margin-bottom: 0;
+}

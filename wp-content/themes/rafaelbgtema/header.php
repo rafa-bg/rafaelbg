@@ -15,10 +15,10 @@
 
 		<ul class="menuprincipal__lista">
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Inicio</a></li>
-			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Sobre mi</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php if( is_front_page() ) { echo '#sobremi'; } else { echo esc_url(site_url()).'#sobremi'; } ?>">Sobre mi</a></li>
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/servicios')) ?>">Servicios</a></li>
 			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">Portafolio</a></li>
-			<li class="menuprincipal__vinculo"><a href="#">Contacto</a></li>
+			<li class="menuprincipal__vinculo"><a href="<?php if( is_page('servicios') OR is_page('portafolio') OR is_front_page() ) { echo '#contacto'; } else { echo esc_url(site_url('/contacto')); } ?>">Contacto</a></li>
 		</ul>
 
 		<div class="menuprincipal__footer">

@@ -70,3 +70,7 @@
 	color: white;
 	border-top: 1px solid rgba(#000000, 0.25);
 }
+
+.footer.no-footer {
+	display: none;
+}

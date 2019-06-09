@@ -1,5 +1,7 @@
 <?php 
 get_header();
+while(have_posts()) {
+the_post();
 ?>
 <div class="unproyecto seccion conte conte-fijo">
 	<div class="fila">
@@ -36,7 +38,8 @@ get_header();
 			</div>
 			
 		</div>
-		<div class="col col-12">
+		<div class="col col-12 unproyecto__contenido">
+			<?php the_content(); ?>
 		</div>
 	</div>
 </div>
@@ -98,12 +101,17 @@ get_header();
 					// termina el while //
 				}
 				// termina el if //
+				wp_reset_postdata();
+
 				?>
+
+
 			</div>
 		</div>
 	</div>
 </div>
 
 <?php
+}
 get_footer();
 ?>

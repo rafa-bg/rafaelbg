@@ -1313,7 +1313,12 @@ select { /* 1 */
 		transition: color ease 0.25s;
 	}.unproyecto__visitarsitio:hover {
 		color: #C9002F;
-	}.compartir {
+	}/***********/.unproyecto__contenido img {
+			max-width: 100%;
+			height: auto;
+			-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+			        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		}.compartir {
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;

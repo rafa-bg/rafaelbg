@@ -31,7 +31,9 @@ get_header();
 	?>
 	<div class="portafolio__unode">
 		<div class="portafolio__wrapperimagen">
-			<img sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" alt="<?php the_title(); ?>" class="portafolio__imagen">
+			<a href="<?php the_permalink() ?>">
+				<img sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" alt="<?php the_title(); ?>" class="portafolio__imagen">
+			</a>
 
 		</div>
 		<div class="portafolio__informacion">

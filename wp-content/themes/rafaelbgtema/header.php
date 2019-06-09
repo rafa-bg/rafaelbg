@@ -5,6 +5,15 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 	<meta name="msapplication-TileColor" content="#03181D">
 	<meta name="theme-color" content="#03181D">
+	<!--social-->
+	<meta property="og:url" content="<?php echo get_the_permalink(); ?>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php echo wp_title(); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:image" content="<?php if( is_singular('proyectos') ) { echo get_the_post_thumbnail_url('','socialthumbnail'); } else { echo get_theme_file_uri('/img/rafaelbgsocialdefault.jpg'); } ?>" />
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<!--/social-->
 
 	<?php wp_head(); ?>
 </head>
@@ -12,13 +21,12 @@
 
 	<div class="menuprincipal">
 		<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="menuprincipal__logo">
-
 		<ul class="menuprincipal__lista">
-			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url()) ?>">Inicio</a></li>
+			<li class="menuprincipal__vinculo <?php if ( is_front_page() ) { echo 'menuprincipal__vinculo--actual'; } ?>"><a href="<?php if (is_front_page() ) { echo '#portada'; } else { echo esc_url(site_url()); } ?>">Inicio</a></li>
 			<li class="menuprincipal__vinculo"><a href="<?php if( is_front_page() ) { echo '#sobremi'; } else { echo esc_url(site_url()).'#sobremi'; } ?>">Sobre mi</a></li>
-			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/servicios')) ?>">Servicios</a></li>
-			<li class="menuprincipal__vinculo"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">Portafolio</a></li>
-			<li class="menuprincipal__vinculo"><a href="<?php if( is_page('servicios') OR is_page('portafolio') OR is_front_page() ) { echo '#contacto'; } else { echo esc_url(site_url('/contacto')); } ?>">Contacto</a></li>
+			<li class="menuprincipal__vinculo <?php if ( is_page('servicios') ) { echo 'menuprincipal__vinculo--actual'; } ?>"><a href="<?php echo esc_url(site_url('/servicios')) ?>">Servicios</a></li>
+			<li class="menuprincipal__vinculo <?php if ( is_page('portafolio') OR  is_singular('proyectos') ) { echo 'menuprincipal__vinculo--actual'; } ?>"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">Portafolio</a></li>
+			<li class="menuprincipal__vinculo <?php if ( is_page('contacto') ) { echo 'menuprincipal__vinculo--actual'; } ?>"><a href="<?php if( is_page('servicios') OR is_page('portafolio') OR is_front_page() ) { echo '#contacto'; } else { echo esc_url(site_url('/contacto')); } ?>">Contacto</a></li>
 		</ul>
 
 		<div class="menuprincipal__footer">
@@ -43,7 +51,9 @@
 		</div>
 		
 			<div class="barranavegacion">
-				<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="barranavegacion__logo">
+				<a href="<?php esc_url(site_url()) ?>">
+					<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="barranavegacion__logo">
+				</a>
 
 				<div class="menucuadrado">
 					<span class="menucuadrado__lineas menucuadrado__lineas__arriba"></span>

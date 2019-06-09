@@ -1,5 +1,16 @@
 .unproyecto {
 
+	&__imagenintroduccion {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	&__informaciongeneral {
+		padding-top: 60px;
+	}
+
 	&__titulo {
 		color: $magentafabuloso;
 		text-transform: uppercase;
@@ -7,7 +18,7 @@
 		font-weight: 500;
 		font-size: 4rem;
 		margin: 0;
-		line-height: 90%;
+		line-height: 95%;
 	}
 
 	&__categorias {
@@ -30,7 +41,7 @@
 	}
 
 	&__creditos {
-		border-top: 2px solid $magentafabuloso;
+		border-top: 1px solid rgba(0,0,0,0.15);
 		line-height: 125%;
 		padding-top: 30px;
 

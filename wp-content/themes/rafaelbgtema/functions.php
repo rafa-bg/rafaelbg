@@ -9,6 +9,8 @@ function rafaelBGSetup() {
   add_image_size('portafolio-horizontal-hdpi', 2480, 930, true); 
   add_image_size('portafolio-cuadrado', 465, 465, true); 
   add_image_size('portafolio-cuadrado-hdpi', 930, 930, true); 
+  //social
+  add_image_size('socialthumbnail', 1200, 630, true); 
 }
 
 add_action('after_setup_theme', 'rafaelBGSetup');

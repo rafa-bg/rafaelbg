@@ -10,7 +10,7 @@
 					<br><br>
 					Cuéntame tus ideas. Manda un mensaje usando el formulario de contacto que esta debajo. 
 				</p>
-				<form action="">
+				<form id="formulario" action="">
 					<div class="formulario__wrapper">
 						<label class="formulario__label" for="nombre">Nombre</label>
 						<input id="nombrecompleto" name="nombre" type="text" class="formulario__input" autocomplete="off">

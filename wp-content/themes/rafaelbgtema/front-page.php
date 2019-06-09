@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<div class="portada portada--portadaprincipal">
+<div id="portada" class="portada portada--portadaprincipal">
 	<img src="<?php echo get_theme_file_uri('img/rcirculo.svg'); ?>" alt="RAFAEL//BG" class="portada__logo">
 	<img src="<?php echo get_theme_file_uri('img/rcirculo__titulo.svg'); ?>" alt="RAFAEL//BG" class="portada__nombre">
 	<img src="<?php echo get_theme_file_uri('/img/portada__circulos') ?>" alt="Rafaelbg" class="portada__circulos">

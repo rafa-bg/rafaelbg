@@ -59,7 +59,12 @@
 	}
 
 	&__vinculo:hover {
-		text-indent: 15px;
+		text-indent: 10px;
+	}
+
+	&__vinculo--actual {
+		color: $magentafabuloso;
+		text-indent: 0 !important;
 	}
 
 	&__footer {

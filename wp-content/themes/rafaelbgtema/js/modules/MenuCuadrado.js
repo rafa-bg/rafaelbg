@@ -5,6 +5,7 @@ class MenuCuadrado {
 		this.menucuadradotrigger = $('.menucuadrado');
 		this.bloquedemenu = $('.menuprincipal');
 		this.menuoverlay = $('.menuprincipal__overlay');
+		this.links = $(".menuprincipal__vinculo a");
 		this.events();
 	}
 
@@ -15,6 +16,9 @@ class MenuCuadrado {
 		this.menuoverlay.click(this.sevuelvequis.bind(this));
 		this.menuoverlay.click(this.deslizaelmenu.bind(this));
 		this.menuoverlay.click(this.apareceoverlay.bind(this));
+		this.links.click(this.sevuelvequis.bind(this));
+		this.links.click(this.deslizaelmenu.bind(this));
+		this.links.click(this.apareceoverlay.bind(this));
 	}
 
 	sevuelvequis() {

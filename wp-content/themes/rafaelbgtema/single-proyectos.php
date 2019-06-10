@@ -39,7 +39,9 @@ the_post();
 			
 		</div>
 		<div class="col col-12 unproyecto__contenido">
-			<?php the_content(); ?>
+			<div class="fila fila-centrado">
+				<?php the_field('proyecto__contenido'); ?>
+			</div>
 		</div>
 	</div>
 </div>

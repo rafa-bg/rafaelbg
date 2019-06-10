@@ -3,7 +3,7 @@
 function rafaelbg_post_types() {
 
 register_post_type('proyectos', array(
-		'supports' =>array('title', 'editor', 'thumbnail'),
+		'supports' =>array('title', 'thumbnail'),
 		'public' => true,
 		'labels' => array(
 			'name' => 'Proyectos',

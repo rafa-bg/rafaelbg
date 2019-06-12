@@ -34,7 +34,6 @@ get_header();
 			<a href="<?php the_permalink() ?>">
 				<img sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" alt="<?php the_title(); ?>" class="portafolio__imagen">
 			</a>
-
 		</div>
 		<div class="portafolio__informacion">
 			<h1 class="portafolio__titulo">
@@ -59,12 +58,12 @@ get_header();
 			</p>
 		</div>
 	</div>
-		<?php
-			}
-			// termina el while //
+	<?php
 		}
+	// termina el while //
+	}
 		// termina el if //
-		?>		
+	?>		
 </div>
 
 <div class="testimoniales seccion conte conte-fijo">

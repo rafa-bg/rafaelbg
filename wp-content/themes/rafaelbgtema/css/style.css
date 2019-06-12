@@ -1,9 +1,11 @@
 @import "normalize.css";
+@import "animate.css";
 /**************/
 @import "base/_varmix";
 @import "base/_tipografias";
 @import "base/_global";
 @import "base/_grid";
+@import "base/_margenes";
 /*****************/
 @import "modules/_menuprincipal";
 @import "modules/_barranavegacion";

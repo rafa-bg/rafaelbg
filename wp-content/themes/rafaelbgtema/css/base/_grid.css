@@ -157,12 +157,23 @@
 /******/
 
 .col-titulo {
-	width: 85px;
-	padding-right: 30px;
-	float: left;
+	width: 100%;
+	padding-right: 0;
+	float: unset;
+
+	@mixin lg_px {
+		width: 85px;
+		padding-right: 30px;
+		float: left;
+	}
 }
 
 .col-contenido {
-	width: calc(100% - 85px);
-	float: left;
+	width: 100%;
+	float: unset;
+
+	@mixin lg_px {
+		width: calc(100% - 85px);
+			float: left;
+	}
 }

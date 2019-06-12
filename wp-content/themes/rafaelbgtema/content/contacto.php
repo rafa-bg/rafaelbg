@@ -42,7 +42,7 @@
 
 				</form>
 			</div>
-			<div class="col col-xl-5 contacto__imagenwrapper">
+			<div class="col col-xl-5 contacto__imagenwrapper wow fadeInRight" data-wow-offset="100">
 				<img sizes="600px" srcset="<?php echo get_theme_file_uri('/img/piramides.png'); ?> 600w, <?php echo get_theme_file_uri('/img/piramides-hdpi.png') ?> 1200w" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide">
 				<img sizes="600px" srcset="<?php echo get_theme_file_uri('/img/piramides--sombra.png'); ?> 600w, <?php echo get_theme_file_uri('/img/piramides--sombra-hdpi.png') ?> 1200w" alt="Deja de ver el alt, ponte en contacto" class="contacto__piramide--sombra">
 

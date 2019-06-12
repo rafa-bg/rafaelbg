@@ -4,7 +4,9 @@
 	overflow: hidden;
 	height: 100vh;
 	width: 100%;
-
+	/*
+	background-image: url(img/testfondo.jpg);
+	*/
 	@mixin sm_px {
 		padding-top: 0px;
 	}
@@ -71,6 +73,15 @@
 		top: 50%;
 		transform: translate3d(-50%, -50%, 0);
 		z-index: 0;
+		width: 992px;
+
+		@mixin lg_px {
+			width: 1920px;
+		}
+
+		@mixin 2000_px {
+			width: 2560px;
+		}
 	}
 
 	&__luna {

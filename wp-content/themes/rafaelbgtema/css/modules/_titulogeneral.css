@@ -2,13 +2,22 @@
 	text-transform: uppercase;
 	font-family: BebasNeue;
 	font-weight: 500;
-	font-size: 3rem;
 	color: $magentafabuloso;
-	transform: rotate(-90deg) translateY(4.25rem);
-	transform-origin: 0 100%;
 	display: inline-block;
 	margin: 0 0 0 0;
 	white-space: nowrap;
+	font-size: 2.5rem;
+	transform: rotate(0deg) translateY(0rem);
+	transform-origin: 50% 50%;
+
+	@mixin lg_px {
+		transform: rotate(-90deg) translateY(4.25rem);
+		transform-origin: 0 100%;
+	}
+
+	@mixin xl_px {
+		font-size: 3rem;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -21,7 +30,11 @@
 		width: 1000%;
 		background-color: $verdeserio;
 		display: inline-block;
-		margin: 0 0 15px 15px;
+		margin: 0 0 10px 15px;
+
+		@mixin xl_px {
+			margin: 0 0 15px 15px;
+		}
 	}
 
 	&--blanco {

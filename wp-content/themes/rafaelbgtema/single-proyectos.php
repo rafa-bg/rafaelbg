@@ -6,7 +6,7 @@ the_post();
 <div class="unproyecto seccion conte conte-fijo">
 	<div class="fila">
 		<div class="col col-6">
-			<img sizes="<?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>" srcset="<?php echo get_field('proyecto__imagenintro') ?> <?php echo get_field('proyecto__imagenintro__maxwidth').'w' ?>, <?php echo get_field('proyecto__imagenintro-hdpi') ?> <?php echo (get_field('proyecto__imagenintro__maxwidth')*2).'w' ?>" alt="<?php the_title() ?>" class="unproyecto__imagenintroduccion" style="max-width: <?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>;">
+			<img sizes="<?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>" srcset="<?php echo get_field('proyecto__imagenintro') ?> <?php echo get_field('proyecto__imagenintro__maxwidth').'w' ?>, <?php echo get_field('proyecto__imagenintro-hdpi') ?> <?php echo (get_field('proyecto__imagenintro__maxwidth')*2).'w' ?>" alt="<?php the_title() ?>" class="unproyecto__imagenintroduccion wow slideInLeft" style="max-width: <?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>;">
 		</div>
 
 		<div class="col col-6 unproyecto__informaciongeneral">
@@ -40,7 +40,36 @@ the_post();
 		</div>
 		<div class="col col-12 unproyecto__contenido">
 			<div class="fila fila-centrado">
-				<?php the_field('proyecto__contenido'); ?>
+				<?php
+				//aca van los proyectos
+				$medarcade = 33;
+				$rcastillo = 32;
+				$olzaba = 31;
+				$agencialoca = 30;
+				$inspirasoul = 29;
+
+				if ( get_the_id() == $medarcade ) {
+					get_template_part('portafolio/medarcade');
+				}
+
+				if ( get_the_id() == $rcastillo ) {
+					get_template_part('portafolio/rcastillo');
+				}
+
+				if ( get_the_id() == $olzaba ) {
+					get_template_part('portafolio/olzaba');
+				}
+
+				if ( get_the_id() == $agencialoca ) {
+					get_template_part('portafolio/agencialoca');
+				}
+
+				if ( get_the_id() == $inspirasoul ) {
+					get_template_part('portafolio/inspirasoul');
+				}
+				///aca van los proyectos
+				?>
+				
 			</div>
 		</div>
 	</div>
@@ -80,7 +109,7 @@ the_post();
 ?>
 
 <div class="portafoliothumbnails__wrapper--singleproyecto">
-	<div class="portafoliothumbnails conte conte-fijo">
+	<div class="portafoliothumbnails conte conte-fijo-lg">
 		<div class="fila fila--titulovertical">
 			<div class="col-titulo titulogeneral__wrapper">
 				<h1 class="titulogeneral titulogeneral--blanco"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">¡Aún hay más!</a> <span class="titulogeneral__dash titulogeneral__dash--blanco"></span></h1>
@@ -93,7 +122,7 @@ the_post();
 				     while ($portaQuery ->have_posts()) {              
 				         $portaQuery ->the_post();
 				?>
-				<div class="col col-xl-4">
+				<div class="col col-md-4 portafoliothumbnails__unode">
 					<a href="<?php the_permalink(); ?>">
 						<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
 					</a>

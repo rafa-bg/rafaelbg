@@ -22,7 +22,7 @@ the_post();
 	<!---->
 	<div class="fila servicios__unode">
 		<div class="col col-5">
-			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__web.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__web-hdpi.png') ?> 600w" alt="" class="servicios__icono">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__web.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__web-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 		</div>
 		<div class="col col-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
@@ -38,7 +38,7 @@ the_post();
 	<!---->
 	<div class="fila servicios__unode">
 		<div class="col col-5">
-			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__branding.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__branding-hdpi.png') ?> 600w" alt="" class="servicios__icono">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__branding.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__branding-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 
 		</div>
 		<div class="col col-7 servicios__textowrapper">
@@ -55,7 +55,7 @@ the_post();
 	<!---->
 	<div class="fila servicios__unode">
 		<div class="col col-5">
-			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__diseno.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__diseno-hdpi.png') ?> 600w" alt="" class="servicios__icono">
+			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__diseno.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__diseno-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 		</div>
 		<div class="col col-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">

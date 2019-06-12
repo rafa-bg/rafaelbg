@@ -4,14 +4,22 @@
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+	/**/
+	margin-top: 15px !important;
 
 	&__unode {
-		margin-bottom: 30px;
 		position: relative;
+		/**/
+		margin-bottom: 35px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid rgba(0,0,0,0.10);
+		/**/
+		/*
+		margin-bottom: 30px;
+		*/
 	}
 
 	&__titulo {
-		font-size: 4rem;
 		font-family: BebasNeue;
 		font-weight: 500;
 		margin: 0;
@@ -19,6 +27,12 @@
 		line-height: 100%;
 		color: $magentafabuloso;
 		transition: color ease-in-out 0.2s;
+		/**/
+		font-size:  3.25rem;
+		/**/
+		/*
+		font-size: 4rem;
+		*/
 	}
 
 	&__titulo:hover {
@@ -27,44 +41,62 @@
 
 	&__categorias {
 		margin: 0;
-		font-size: 3rem;
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: $verdeserio;
+		line-height: 100%;
+		/**/
+		font-size:  2.75rem;
+		/**/
+		/*
+		font-size: 3rem;
 		line-height: 80%;
+		*/
 	}
 
 	&__descripcion {
 		font-size: 1rem;
 		line-height: 125%;
+		margin: 5px 0 0 0;
+		/*margin: 15px 0 0 0;*/
 	}
 
 	&__informacion {
+		/*
 		width: 35%;
 		position: absolute;
 		top: 50%;
 		right: 0;
 		padding-left: 30px;
 		transform: translateY(-50%);
+		*/
 	}
 
 	&__wrapperimagen {
+		width: 100%;
+		margin-bottom: 30px;
+		/*
 		position: relative;
 		z-index: 1;
 		width: 100%;
 		height: 465px;
 		transition: width ease-in-out 0.25s;
 		overflow: hidden;
+		*/
 	}
 
 	&__unode:hover .portafolio__wrapperimagen {
-		width: 65%;
+		/*width: 65%;*/
 	}
 
 	&__imagen {
+		width: 100%;
+		height: auto;
+		/*
 		position: absolute;
 		top: 0;
 		right: 50%;
 		transform: translateX(50%);
+		*/
 	}
 }

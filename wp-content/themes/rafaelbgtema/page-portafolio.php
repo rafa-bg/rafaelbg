@@ -32,7 +32,15 @@ get_header();
 	<div class="portafolio__unode">
 		<div class="portafolio__wrapperimagen">
 			<a href="<?php the_permalink() ?>">
-				<img sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" alt="<?php the_title(); ?>" class="portafolio__imagen">
+				<!--
+				<img  >-->
+
+				<picture>
+					<source sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" media="(min-width: 576px)">
+					
+					<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafolio__imagen">
+				</picture>
+
 			</a>
 		</div>
 		<div class="portafolio__informacion">

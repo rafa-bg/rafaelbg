@@ -40,7 +40,6 @@
 	&__titulo {
 		font-family: BebasNeue;
 		font-weight: 500;
-		font-size: 8rem;
 		color: white;
 		margin: 0;
 		padding: 0;
@@ -49,10 +48,15 @@
 		display: block;
 		text-align: center;
 		position: absolute;
-		top: calc(50% - 40px);
 		right: 50%;
 		transform: translate3d(50%, -50%, 0);
 		z-index: 2;
+		font-size: 5rem;
+		top: 50%;
+		/*
+		font-size: 8rem;
+		top: calc(50% - 40px);
+		*/
 	}
 
 	&__circulos {
@@ -95,12 +99,18 @@
 	}
 
 	&__icosaedro {
-		width: 650px;
-		height: 650px;
+		width: 110%;
+		max-width: 650px;
+		height: auto;
 		position: absolute;
 		left: 50%;
-		top: calc(50% - 20px);
+		top: calc(50%);
 		transform: translate3d(-50%, -50%, 0) rotate(15deg);
 		z-index: 1;
+		/*
+		width: 650px;
+		height: 650px;
+		top: calc(50% - 20px);
+		*/
 	}
 }

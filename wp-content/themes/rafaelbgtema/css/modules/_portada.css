@@ -53,10 +53,18 @@
 		z-index: 2;
 		font-size: 5rem;
 		top: 50%;
-		/*
-		font-size: 8rem;
-		top: calc(50% - 40px);
-		*/
+
+		@mixin sm_px {
+			font-size: 6.5rem;
+		}
+
+		@mixin md_px {
+			font-size: 8rem;
+		}
+
+		@mixin lg_px {
+			font-size: 9.5rem;
+		}
 	}
 
 	&__circulos {
@@ -107,10 +115,9 @@
 		top: calc(50%);
 		transform: translate3d(-50%, -50%, 0) rotate(15deg);
 		z-index: 1;
-		/*
-		width: 650px;
-		height: 650px;
-		top: calc(50% - 20px);
-		*/
+
+		@mixin lg_px {
+			max-width: 700px;
+		}
 	}
 }

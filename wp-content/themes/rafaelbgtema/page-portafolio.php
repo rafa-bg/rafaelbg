@@ -21,7 +21,7 @@ get_header();
 ?>
 
 
-<div class="portafolio seccion">
+<div class="portafolio mt90-xl mt60-lg mt30-sm mt15">
 	<?php 
 	// empieza el if //
 	if ($portaQuery->have_posts()) {
@@ -32,15 +32,7 @@ get_header();
 	<div class="portafolio__unode">
 		<div class="portafolio__wrapperimagen">
 			<a href="<?php the_permalink() ?>">
-				<!--
-				<img  >-->
-
-				<picture>
-					<source sizes="1240px" srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" media="(min-width: 576px)">
-					
-					<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafolio__imagen">
-				</picture>
-
+				<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafolio__imagen">
 			</a>
 		</div>
 		<div class="portafolio__informacion">

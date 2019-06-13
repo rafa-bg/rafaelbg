@@ -1,22 +1,34 @@
 .portafolio {
 	max-width: 1270px;
-	padding-left: 15px;
-	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	/**/
-	margin-top: 15px !important;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@mixin sm_px {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 
 	&__unode {
 		position: relative;
 		/**/
-		margin-bottom: 35px;
-		padding-bottom: 30px;
-		border-bottom: 1px solid rgba(0,0,0,0.10);
-		/**/
-		/*
 		margin-bottom: 30px;
-		*/
+		padding-bottom: 25px;
+		border-bottom: 1px solid rgba(0,0,0,0.10);
+
+		@mixin md_px {
+			margin-bottom: 45px;
+			padding-bottom: 40px;
+		}
+
+		@mixin lg_px {
+			border-bottom: none;
+			margin-bottom: 30px;
+			padding-bottom: 0;
+		}
+
 	}
 
 	&__titulo {
@@ -27,12 +39,24 @@
 		line-height: 100%;
 		color: $magentafabuloso;
 		transition: color ease-in-out 0.2s;
-		/**/
-		font-size:  3.25rem;
-		/**/
-		/*
-		font-size: 4rem;
-		*/
+		font-size:  3rem;
+
+		@mixin xs_px {
+			font-size:  3.25rem;
+		}
+		@mixin sm_px {
+			font-size:  3.5rem;
+		}
+		@mixin md_px {
+			font-size:  3.75rem;
+		}
+
+		@mixin lg_px {
+			font-size:  3.5rem;
+		}
+		@mixin xl_px {
+			font-size:  3.75rem;	
+		}
 	}
 
 	&__titulo:hover {
@@ -44,59 +68,116 @@
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: $verdeserio;
-		line-height: 100%;
+		line-height: 90%;
 		/**/
-		font-size:  2.75rem;
-		/**/
-		/*
-		font-size: 3rem;
-		line-height: 80%;
-		*/
+		font-size:  2.5rem;
+		
+		@mixin xs_px {
+			font-size:  2.75rem;
+		}
+
+		@mixin sm_px {
+			font-size:  3rem;
+		}
+
+		@mixin md_px {
+			font-size:  3.25rem;			
+		}
+
+		@mixin lg_px {
+			font-size:  3rem;
+			
+		}
+
+		@mixin xl_px {
+			font-size:  3.25rem;
+			
+		}
 	}
 
 	&__descripcion {
 		font-size: 1rem;
 		line-height: 125%;
-		margin: 5px 0 0 0;
-		/*margin: 15px 0 0 0;*/
+		margin: 10px 0 0 0;
+
+		@mixin md_px {
+			font-size: 1.125rem;
+			margin: 15px 0 0 0;
+		}
+
+		@mixin lg_px {
+			font-size: 1rem;
+			margin: 10px 0 0 0;
+		}
+
+		@mixin xl_px {
+			font-size: 1.125rem;
+			margin: 15px 0 0 0;
+		}
 	}
 
 	&__informacion {
-		/*
-		width: 35%;
-		position: absolute;
-		top: 50%;
-		right: 0;
-		padding-left: 30px;
-		transform: translateY(-50%);
-		*/
+		width: 100%;
+		
+		@mixin lg_px {
+			width: 45%;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			padding-left: 30px;
+			transform: translateY(-50%);
+		}
+
+		@mixin xl_px {
+			width: 40%;
+		}
 	}
 
 	&__wrapperimagen {
 		width: 100%;
-		margin-bottom: 30px;
-		/*
+		height: 300px;
+		margin-bottom: 15px;
 		position: relative;
 		z-index: 1;
-		width: 100%;
-		height: 465px;
-		transition: width ease-in-out 0.25s;
 		overflow: hidden;
-		*/
+		transition: width ease-in-out 0.25s;
+
+		@mixin xs_px {
+			height: 320px;
+		}
+
+		@mixin md_px {
+			height: 465px;
+		}
+		@mixin lg_px {
+			width: 55%;
+			margin-bottom: 0px;
+		}
+		@mixin xl_px {
+			width: 100%;
+		}
 	}
 
 	&__unode:hover .portafolio__wrapperimagen {
-		/*width: 65%;*/
+		@mixin xl_px {
+			width: 60%;
+		}
 	}
 
 	&__imagen {
-		width: 100%;
-		height: auto;
-		/*
+		width: auto;
+		height: 300px;
 		position: absolute;
 		top: 0;
 		right: 50%;
 		transform: translateX(50%);
-		*/
+
+		@mixin xs_px {
+			height: 320px;
+		}
+
+		@mixin md_px {
+			height: 465px;
+		}
 	}
 }

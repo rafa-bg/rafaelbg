@@ -12,7 +12,7 @@ $verdenegro: #03181D;
 }
 
 @define-mixin xs_px {
-	@media (min-width: 450px) {
+	@media (min-width: 350px) {
 		@mixin-content;
 	}
 }

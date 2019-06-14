@@ -5,40 +5,63 @@
 	color: $magentafabuloso;
 	display: inline-block;
 	margin: 0 0 0 0;
-	white-space: nowrap;
-	font-size: 2.5rem;
+	white-space: normal;
+	/**/
+	font-size: 3rem;
+	line-height: 100%; 
 	transform: rotate(0deg) translateY(0rem);
 	transform-origin: 50% 50%;
+	border-bottom: 5px solid $magentafabuloso;
+	padding: 0 10px 5px 10px;
 
-	@mixin lg_px {
-		transform: rotate(-90deg) translateY(4.25rem);
-		transform-origin: 0 100%;
+	@mixin md_px {
+		padding: 0 30px 5px 0px;
+		font-size: 4rem;
 	}
 
 	@mixin xl_px {
+		transform: rotate(-90deg) translateY(4.25rem);
+		transform-origin: 0 100%;
+		white-space: nowrap;
+		border-bottom: none;
+		padding: 0;
 		font-size: 3rem;
+		display: inline-block;
 	}
 
 	&__wrapper {
-		display: flex;
-		align-items: flex-end;
-		overflow: hidden;
+		text-align: center;
+		padding-right: 30px;
+		margin-bottom: 30px;
+
+		@mixin md_px {
+			text-align: left;
+		}
+
+		@mixin xl_px {
+			display: flex;
+			align-items: flex-end;
+			overflow: hidden;
+			padding-right: 0px;
+			margin-bottom: 0px;
+		}
 	}
 
 	&__dash {
+		display: none;
 		height: 5px;
 		width: 1000%;
 		background-color: $verdeserio;
-		display: inline-block;
-		margin: 0 0 10px 15px;
 
 		@mixin xl_px {
 			margin: 0 0 15px 15px;
+			display: inline-block;
 		}
 	}
 
 	&--blanco {
 		color: white;
+		border-bottom: 5px solid #ffffff;
 	}
 
 	&__dash--blanco {

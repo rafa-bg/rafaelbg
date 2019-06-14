@@ -4,7 +4,7 @@
 	&__parrafo {
 		color: rgba($verdenegro, 0.85);
 		font-size: 1rem;
-		margin: 15px 0 15px 0;
+		margin: 0px 0 15px 0;
 		text-align: center;
 
 		@mixin md_px {
@@ -20,13 +20,18 @@
 	}
 
 	&__imagenwrapper {
+		display: none;
+
+		@mixin xl_px {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 		flex-direction: column;
+		}
 	}
 
 	&__piramide {
+
 		max-width: 600px;
 		width: 90%;
 		height: auto;

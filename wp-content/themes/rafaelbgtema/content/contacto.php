@@ -7,8 +7,10 @@
 			<div class="col col-xl-7 contacto__formularioycopywrapper">
 				<p class="contacto__parrafo">
 					¿Te gustó mi trabajo? ¡Ponte en contacto! 😉
+					<!--
 					<br><br>
 					Cuéntame tus ideas. Manda un mensaje usando el formulario de contacto que esta debajo. 
+					-->
 				</p>
 				<form id="formulario" action="">
 					<div class="formulario__wrapper">

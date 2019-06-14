@@ -178,7 +178,7 @@
 	width: 100%;
 	float: unset;
 
-	@mixin lg_px {
+	@mixin xl_px {
 		width: calc(100% - 85px);
 			float: left;
 	}

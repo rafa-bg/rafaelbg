@@ -62,6 +62,10 @@
 	&--blanco {
 		color: white;
 		border-bottom: 5px solid #ffffff;
+
+		@mixin xl_px {
+			border-bottom: none;
+		}
 	}
 
 	&__dash--blanco {

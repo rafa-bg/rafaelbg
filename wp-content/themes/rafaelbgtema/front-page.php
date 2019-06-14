@@ -56,10 +56,12 @@ get_header();
 			     while ($portaQuery ->have_posts()) {              
 			         $portaQuery ->the_post();
 			?>
-			<div class="col col-xl-4">
-				<a href="<?php the_permalink(); ?>">
-					<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
-				</a>
+			<div class="col col-lg-4 portafoliothumbnails__unode">
+				<div class="portafoliothumbnails__wrapper">
+					<a href="<?php the_permalink(); ?>">
+						<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafoliothumbnails__img">
+					</a>
+				</div>
 			</div>
 			<?php
 				}

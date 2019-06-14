@@ -109,7 +109,7 @@ the_post();
 ?>
 
 <div class="portafoliothumbnails__wrapper--singleproyecto">
-	<div class="portafoliothumbnails conte conte-fijo-lg">
+	<div class="portafoliothumbnails conte conte-fijo">
 		<div class="fila fila--titulovertical">
 			<div class="col-titulo titulogeneral__wrapper">
 				<h1 class="titulogeneral titulogeneral--blanco"><a href="<?php echo esc_url(site_url('/portafolio')) ?>">¡Aún hay más!</a> <span class="titulogeneral__dash titulogeneral__dash--blanco"></span></h1>
@@ -122,10 +122,12 @@ the_post();
 				     while ($portaQuery ->have_posts()) {              
 				         $portaQuery ->the_post();
 				?>
-				<div class="col col-md-4 portafoliothumbnails__unode">
-					<a href="<?php the_permalink(); ?>">
-						<img src="<?php the_post_thumbnail_url('portafolio-cuadrado'); ?>" class="portafoliothumbnails__img">
-					</a>
+				<div class="col col-lg-4 portafoliothumbnails__unode">
+					<div class="portafoliothumbnails__wrapper">
+						<a href="<?php the_permalink(); ?>">
+							<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafoliothumbnails__img">
+						</a>
+					</div>
 				</div>
 				<?php
 					}

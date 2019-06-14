@@ -2,13 +2,17 @@
 	z-index: 100;
 	position: fixed;
 	background-color: $verdeserio;
-	min-height: 100vh;
+	height: 100vh;
 	width: 100%;
 	left: 0;
 	top: -100vh;
 	right: unset;
 	transition: top ease-out 0.2s;
-	padding-top: 110px;
+	padding-top: 80px;
+	/**/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	@mixin sm_px {
 		width: 556px;
@@ -17,21 +21,38 @@
 		top:0;
 		padding-top: 60px;
 		transition: left ease-out 0.2s;
+		justify-content: space-between;
+	}
+
+	&__wrapperoverflow {
+		overflow: hidden;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+		@mixin sm_px {
+			justify-content: space-between;
+		}
 	}
 
 	&__lista {
 		list-style: none;
 		margin: 0 0 0 30px;
 		padding: 0;
-		width: 175px;
+		width: 150px;
 
 		@mixin xs_px {
-			margin: 0 0 0 30px;
-		} 	
-
-		@mixin sm_px {
-			width: 300px;
+			width: 200px;
 		}
+		@mixin sm_px {
+			width: 200px;
+			margin: 0 0 0 60px;
+		}
+		@mixin lg_px {
+			width: 230px;
+		} 
 	}
 
 	&__vinculo {
@@ -39,19 +60,28 @@
 		text-transform: uppercase;
 		font-family: BebasNeue;
 		font-weight: 500;
-		font-size: 2.5rem;
-		margin: 0 0 15px 0;
+		font-size: 3rem;
+		margin: 0 0 10px 0;
 		line-height: 100%;
 		transition: text-indent ease-out 0.2s;
 		display: inline-block;
 
 		@mixin xs_px {
-			font-size: 3.5rem;
+			font-size: 3.25rem;
+			margin: 0 0 15px 0;
 		} 
 
 		@mixin sm_px {
+			font-size: 4.25rem;
+		} 
+
+		@mixin lg_px {
 			font-size: 5rem;
 		} 
+	}
+
+	&__vinculo:last-child {
+		margin-bottom: 0;
 	}
 
 	&__vinculo:hover {
@@ -64,18 +94,30 @@
 	}
 
 	&__footer {
-		padding: 10px 30px 30px 30px;
+		padding: 0 0 0 30px ;
+		margin-top: 15px;
 		color: white;
 		width: 100%;
 		text-align: left;
 
-		@mixin sm_px {
-			padding: 30px 95px 30px 60px;
+		@mixin xs_px {
+			margin-top: 20px;
 		}
+
+		@mixin sm_px {
+			padding: 0 80px 60px 60px;
+			margin-top: 30px;
+		}
+
 	}
 
 	&__footer__item {
+		font-size: 1rem;
 		transition: color ease-out 0.2s;
+
+		@mixin sm_px {
+			font-size: 1.125rem;
+		}
 	}
 
 	&__footer__item:hover {
@@ -84,11 +126,15 @@
 
 	&__footer__separador {
 		color: white;
-		margin: 0 10px;
+		margin: 0 5px;
+
+		@mixin sm_px {
+			margin: 0 10px;
+		}
 	}
 
 	&__overlay {
-		background-color: rgba(#000, 0.95);
+		background-color: rgba(0,0,0, 0.95);
 		width: 100%;
 		height: 100vh;
 		position: fixed;
@@ -105,16 +151,14 @@
 	}
 
 	&__logo {
-		display: block;
-		width: 40px;
-		margin-left: 30px;
-		margin-bottom: 30px;
+		display: none;
 
 		@mixin xs_px {
+			display: block;
 			width: 60px;
 			margin-left: 30px;
+			margin-bottom: 30px;
 		} 
-
 		@mixin sm_px {
 			display: none;
 		}
@@ -122,8 +166,8 @@
 
 	&__social {
 		display: block;
-		margin-bottom: 20px;
-
+		margin-bottom: 15px;
+	
 		@mixin sm_px {
 			display: none;
 		}
@@ -132,11 +176,7 @@
 	&__social__item {
 		margin: 0 20px 0 0;
 		color: white;
-		font-size: 1.125rem;
-
-		@mixin xs_px {
-			font-size: 1.25rem;
-		}
+		font-size: 1rem;
 	}
 
 	&__social__item:hover {

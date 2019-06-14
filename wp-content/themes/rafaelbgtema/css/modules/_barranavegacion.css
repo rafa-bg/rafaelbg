@@ -24,13 +24,19 @@
 
 
 	&__logo {
-		width: 40px;
+		width: 35px;
 		height: auto;
 		transform: translateX(4px);
 		display: none;
 
 		@mixin sm_px {
 			display: block;
+		}
+
+		@mixin md_px {
+			width: 40px;
+			font-size: 1.25rem;
+			margin-top: 20px;
 		}
 	}
 
@@ -43,10 +49,19 @@
 
 	&__social__item {
 		display: block !important;
-		margin-top: 20px;
-		font-size: 1.25rem;
+		margin-top: 15px;
+		font-size: 1.125rem;
 		color: white;
 		transition: color ease-out 0.25s;
+
+		@mixin md_px {
+			font-size: 1.25rem;
+			margin-top: 20px;
+		}
+	}
+
+	&__social a:first-child .barranavegacion__social__item {
+		margin-top: 0px;
 	}
 
 	&__social__item:hover {

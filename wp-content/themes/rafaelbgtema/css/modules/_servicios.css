@@ -1,7 +1,7 @@
 .servicios {
 
 	&__unode {
-		margin-bottom: 90px;
+		margin-bottom: 30px;
 	}
 
 	&__textowrapper {
@@ -14,9 +14,10 @@
 		color: $magentafabuloso;
 		font-family: BebasNeue;
 		font-weight:500;
-		font-size: 4rem;
-		margin: 0;
+		font-size: 3.25rem;
+		margin: 15px 0 15px 0;
 		padding: 0;
+		text-align: center;
 	}
 
 	&__parrafo {
@@ -24,11 +25,12 @@
 		line-height: 150%;
 		font-size: 1rem;
 		margin: 0 0 0 0;
-		padding-bottom: 30px;
+		/*padding-bottom: 30px;*/
 	}
 
 	&__icono {
-		width: 300px;
+		max-width: 200px;
+		width: 100%;
 		height: auto;
 		margin: auto; 
 		display: block;

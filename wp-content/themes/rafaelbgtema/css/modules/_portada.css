@@ -97,13 +97,17 @@
 	}
 
 	&__luna {
-		width: 600px;
-		height: 600px;
+		width: 105%;
+		max-width: 650px;
+		height: auto;
 		position: absolute;
 		left: 50%;
-		top: calc(50% - 20px);
+		top: 50%;
 		transform: translate3d(-50%, -50%, 0) rotate(-15deg);
 		z-index: 1;
+		@mixin lg_px {
+			max-width: 700px;
+		}
 	}
 
 	&__icosaedro {

@@ -2,6 +2,14 @@
 
 	&__unode {
 		margin-bottom: 30px;
+
+		@mixin md_px {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__unode:last-child {
+		margin-bottom: 0;
 	}
 
 	&__textowrapper {
@@ -15,9 +23,23 @@
 		font-family: BebasNeue;
 		font-weight:500;
 		font-size: 3.25rem;
-		margin: 15px 0 15px 0;
+		margin: 15px 0 0px 0;
 		padding: 0;
 		text-align: center;
+
+		@mixin sm_px {
+			font-size: 3.5rem;
+
+		}
+
+		@mixin md_px {
+			font-size: 3rem;
+			text-align: left;
+		}
+
+		@mixin lg_px {
+			font-size: 3.5rem;
+		}
 	}
 
 	&__parrafo {
@@ -25,7 +47,17 @@
 		line-height: 150%;
 		font-size: 1rem;
 		margin: 0 0 0 0;
-		/*padding-bottom: 30px;*/
+		text-align: center;
+	
+		@mixin md_px {
+			text-align: left;
+		}
+	}
+
+	&__imagenwrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__icono {
@@ -34,5 +66,24 @@
 		height: auto;
 		margin: auto; 
 		display: block;
+
+		@mixin sm_px {
+			max-width: 250px;
+		}
+
+		@mixin md_px {
+			max-width: 200px;
+			transform: translateY(10px);
+		}
+
+		@mixin lg_px {
+			max-width: 250px;
+			transform: translateY(5px);
+		}
+
+		@mixin xl_px {
+			max-width: 250px;
+			transform: translateY(10px);
+		}
 	}
 }

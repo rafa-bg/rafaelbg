@@ -18,13 +18,13 @@ the_post();
 </div>
 
 
-<div class="servicios conte conte-fijo">
+<div class="servicios conte conte-fijo mt30 mt60-md">
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-lg-5">
+		<div class="col col-md-5 servicios__imagenwrapper">
 			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__web.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__web-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 		</div>
-		<div class="col col-lg-7 servicios__textowrapper">
+		<div class="col col-md-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Sitios Web
 			</h1>
@@ -37,11 +37,11 @@ the_post();
 
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-lg-5">
+		<div class="col col-md-5 servicios__imagenwrapper">
 			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__branding.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__branding-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 
 		</div>
-		<div class="col col-lg-7 servicios__textowrapper">
+		<div class="col col-md-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Branding
 			</h1>
@@ -54,10 +54,10 @@ the_post();
 
 	<!---->
 	<div class="fila servicios__unode">
-		<div class="col col-lg-5">
+		<div class="col col-md-5 servicios__imagenwrapper">
 			<img sizes="300px" srcset="<?php echo get_theme_file_uri('img/servico__diseno.png'); ?> 300w, <?php echo get_theme_file_uri('img/servico__diseno-hdpi.png') ?> 600w" alt="" class="servicios__icono wow fadeIn" data-wow-offset="50">
 		</div>
-		<div class="col col-lg-7 servicios__textowrapper">
+		<div class="col col-md-7 servicios__textowrapper">
 			<h1 class="servicios__titulo">
 				Diseño Gráfico
 			</h1>

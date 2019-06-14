@@ -3383,12 +3383,17 @@ select { /* 1 */
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }.conte {
-	padding-left: 15px;
-	padding-right: 15px;
 	width: 100%;
 	display: block;
 	margin: 0 auto;
-}.conte-fijo {
+	/**/
+	padding-left: 15px;
+	padding-right: 15px;
+}@media (min-width: 576px) {.conte {
+		padding-left: 30px;
+		padding-right: 30px
+}
+	}.conte-fijo {
 	max-width: 100%;
 }@media (min-width: 576px) {.conte-fijo { max-width: 476px
 }
@@ -4610,6 +4615,11 @@ select { /* 1 */
 		top: -100px;
 	}.servicios__unode {
 		margin-bottom: 30px;
+	}@media (min-width: 768px) {.servicios__unode {
+			margin-bottom: 60px
+	}
+	}.servicios__unode:last-child {
+		margin-bottom: 0;
 	}.servicios__textowrapper {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -4626,21 +4636,65 @@ select { /* 1 */
 		font-family: BebasNeue;
 		font-weight:500;
 		font-size: 3.25rem;
-		margin: 15px 0 15px 0;
+		margin: 15px 0 0px 0;
 		padding: 0;
 		text-align: center;
+	}@media (min-width: 576px) {.servicios__titulo {
+			font-size: 3.5rem
+	}
+	}@media (min-width: 768px) {.servicios__titulo {
+			font-size: 3rem;
+			text-align: left
+	}
+	}@media (min-width: 992px) {.servicios__titulo {
+			font-size: 3.5rem
+	}
 	}.servicios__parrafo {
 		color: #06262D;
 		line-height: 150%;
 		font-size: 1rem;
 		margin: 0 0 0 0;
-		/*padding-bottom: 30px;*/
+		text-align: center;
+	}@media (min-width: 768px) {.servicios__parrafo {
+			text-align: left
+	}
+	}.servicios__imagenwrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}.servicios__icono {
 		max-width: 200px;
 		width: 100%;
 		height: auto;
 		margin: auto; 
 		display: block;
+	}@media (min-width: 576px) {.servicios__icono {
+			max-width: 250px
+	}
+	}@media (min-width: 768px) {.servicios__icono {
+			max-width: 200px;
+			-webkit-transform: translateY(10px);
+			    -ms-transform: translateY(10px);
+			        transform: translateY(10px)
+	}
+	}@media (min-width: 992px) {.servicios__icono {
+			max-width: 250px;
+			-webkit-transform: translateY(5px);
+			    -ms-transform: translateY(5px);
+			        transform: translateY(5px)
+	}
+	}@media (min-width: 1200px) {.servicios__icono {
+			max-width: 250px;
+			-webkit-transform: translateY(10px);
+			    -ms-transform: translateY(10px);
+			        transform: translateY(10px)
+	}
 	}.portafolio {
 	max-width: 1270px;
 	margin-left: auto;

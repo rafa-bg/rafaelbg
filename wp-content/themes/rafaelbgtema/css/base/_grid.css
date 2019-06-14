@@ -11,11 +11,17 @@
 }
 
 .conte {
-	padding-left: 15px;
-	padding-right: 15px;
 	width: 100%;
 	display: block;
 	margin: 0 auto;
+	/**/
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@mixin sm_px {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .conte-fijo {

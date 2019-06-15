@@ -2,22 +2,24 @@
 	position: relative;
 
 	&__titulo {
-		font-size: 5rem;
+		/*font-size: 5rem;*/
 		color: $magentafabuloso;
 		font-family: BebasNeue;
 		font-weight: 500;
 		margin: 0;
 		padding: 0;
 		line-height: 100%;
+		font-size: 4rem;
 	}
 
 	&__subtitulo {
 		margin: 0 0 15px 0;
-		font-size: 3rem;
+		/*font-size: 3rem;*/
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: $verdeserio;
 		line-height: 100%;
+		font-size: 2.5rem;
 	}
 
 	&__parrafo {
@@ -30,6 +32,11 @@
 	&__ancla {
 		position: absolute;
 		top: -100px;
+	}
+	/*****/
+
+	&__info {
+		margin-top: 30px;
 	}
 
 }

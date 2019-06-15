@@ -5,11 +5,11 @@ the_post();
 ?>
 <div class="unproyecto seccion conte conte-fijo">
 	<div class="fila">
-		<div class="col col-6">
+		<div class="col col-lg-6">
 			<img sizes="<?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>" srcset="<?php echo get_field('proyecto__imagenintro') ?> <?php echo get_field('proyecto__imagenintro__maxwidth').'w' ?>, <?php echo get_field('proyecto__imagenintro-hdpi') ?> <?php echo (get_field('proyecto__imagenintro__maxwidth')*2).'w' ?>" alt="<?php the_title() ?>" class="unproyecto__imagenintroduccion wow slideInLeft" style="max-width: <?php echo get_field('proyecto__imagenintro__maxwidth').'px' ?>;">
 		</div>
 
-		<div class="col col-6 unproyecto__informaciongeneral">
+		<div class="col col-lg-6 unproyecto__informaciongeneral">
 			<h1 class="unproyecto__titulo"><?php the_title(); ?></h1>
 			<h3 class="unproyecto__categorias">
 				<?php
@@ -36,7 +36,6 @@ the_post();
 			<div class="unproyecto__creditos">
 				<?php the_field('proyecto__creditos'); ?>
 			</div>
-			
 		</div>
 		<div class="col col-12 unproyecto__contenido">
 			<div class="fila fila-centrado">

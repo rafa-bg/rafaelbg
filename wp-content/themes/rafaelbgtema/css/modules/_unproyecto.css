@@ -1,4 +1,9 @@
 .unproyecto {
+	margin-top: calc(80px + 30px);
+
+	@mixin sm_px {
+		margin-top: 60px;
+	}
 
 	&__imagenintroduccion {
 		width: 100%;
@@ -8,7 +13,20 @@
 	}
 
 	&__informaciongeneral {
-		padding-top: 60px;
+		margin-top: 30px;
+
+		@mixin lg_px {
+			margin-top: 30px;
+			padding-top: 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+
+		@mixin xl_px {
+			justify-content: center;
+			padding-bottom: 110px;
+		}
 	}
 
 	&__titulo {
@@ -16,24 +34,52 @@
 		text-transform: uppercase;
 		font-family: BebasNeue;
 		font-weight: 500;
-		font-size: 4rem;
+		font-size: 3rem;
 		margin: 0;
 		line-height: 95%;
+
+		@mixin sm_px {
+			font-size: 4rem;
+		}
+
+		@mixin lg_px {
+			font-size: 3.5rem;
+		}
+
+		@mixin xl_px {
+			font-size: 4rem;
+		}
 	}
 
 	&__categorias {
 		margin: 0;
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-family: BebasNeue;
 		font-weight: 500;
 		color: #06262D;
 		line-height: 100%;
+		/**/
+		@mixin sm_px {
+			font-size: 3.5rem;
+		}
+
+		@mixin lg_px {
+			font-size: 3rem;
+		}
+
+		@mixin xl_px {
+			font-size: 3.5rem;
+		}
 	}
 
 	&__intro {
 		line-height: 125%;
-		margin-top: 30px;
+		margin-top: 15px;
 		margin-bottom: 30px;
+
+		@mixin lg_px {
+			margin-bottom: 15px;
+		}
 
 		p {
 			margin-top: 0;
@@ -44,6 +90,10 @@
 		border-top: 1px solid rgba(0,0,0,0.15);
 		line-height: 125%;
 		padding-top: 30px;
+
+		@mixin lg_px {
+			padding-top: 15px;
+		}
 
 		strong {
 			color: $magentafabuloso
@@ -75,7 +125,8 @@
 	/***********/
 
 	&__contenido {
-		margin-top: 60px;
+		/*margin-top: 60px;*/
+		margin-top: 30px;
 
 		.col {
 			img {

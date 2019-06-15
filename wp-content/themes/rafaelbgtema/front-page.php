@@ -16,14 +16,14 @@ get_header();
 </div>
 
 
-<div class="holahola seccion conte conte-fijo">
+<div class="holahola conte conte-fijo ">
 	<div class="holahola__ancla" id="sobremi"></div>
 	<div class="fila fila--titulovertical">
-		<div class="col col-5">
+		<div class="col col-xl-5 col-lg-5">
 			<div style="height: 630px; width: 100%; background-color: red;"></div>
 		</div>
-		<div class="col col-1"></div>
-		<div class="col col-6">
+		<div class="col col-xl-1 col-lg-0 col-md-0"></div>
+		<div class="col col-xl-6 col-lg-6 holahola__info">
 			<h1 class="holahola__titulo">¡HOLA HOLA!</h1>
 			<h3 class="holahola__subtitulo">//ME LLAMO RAFAEL</h3>
 			<p class="holahola__parrafo">

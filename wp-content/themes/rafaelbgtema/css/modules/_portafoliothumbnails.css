@@ -1,4 +1,5 @@
 .portafoliothumbnails {
+
 	&__unode {
 		margin-bottom: 30px;
 
@@ -45,7 +46,21 @@
 
 	&__wrapper--singleproyecto {
 		background-color: $verdeserio;
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 45px;
+		padding-bottom: 30px;
+
+		@mixin md_px {
+			padding-top: 45px;
+		}
+
+		@mixin lg_px {
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
+
+		@mixin xl_px {
+			padding-top: 75px;
+			padding-bottom: 60px;
+		}
 	}
 }

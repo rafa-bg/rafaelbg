@@ -29,14 +29,9 @@
 		z-index: 2;
 
 		@mixin sm_px {
-			max-width: 280px;
-		}
-		@mixin md_px {
-			max-width: 275px;
-		}
-		@mixin lg_px {
 			max-width: 325px;
 		}
+
 		@mixin xl_px {
 			max-width: 400px;
 		}
@@ -77,18 +72,31 @@
 	}
 
 	&__circulos {
-		display: none;
-		/*
-		width: 1920px;
+		width: 992px;
 		height: auto;
-		opacity: 0.75;
+		opacity: 1;
 		mix-blend-mode: overlay;
 		position: absolute;
 		left: 50%;
-		top: calc(50% - 97px);
+		top: calc(50% - 7.75%);
 		transform: translate3d(-50%, -50%, 0);
 		z-index: 1;
-		*/
+
+		@mixin sm_px {
+			width: 1200px;
+		}
+
+		@mixin lg_px {
+			width: 1400px;
+		}
+
+		@mixin xl_px {
+			width: 1920px;
+		}
+
+		@mixin 2000_px {
+			width: 3250px;
+		}
 	}
 
 	/*************************/

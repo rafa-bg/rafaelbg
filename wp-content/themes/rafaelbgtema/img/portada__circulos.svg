@@ -3,19 +3,13 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 5120 5120" style="enable-background:new 0 0 5120 5120;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.4;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st1{opacity:0.35;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st2{opacity:0.25;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st3{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st4{opacity:0.15;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st5{opacity:0.1;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
-	.st6{opacity:5.000000e-02;fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;enable-background:new    ;}
 </style>
 <circle class="st0" cx="2560" cy="2560" r="2500"/>
-<circle class="st1" cx="2560" cy="2560" r="2222.2"/>
-<circle class="st2" cx="2560" cy="2560" r="1944.4"/>
-<circle class="st3" cx="2560" cy="2560" r="1666.7"/>
-<circle class="st4" cx="2560" cy="2560" r="1388.9"/>
-<circle class="st5" cx="2560" cy="2560" r="1111.1"/>
-<circle class="st6" cx="2560" cy="2560" r="833.3"/>
+<circle class="st0" cx="2560" cy="2560" r="2222.2"/>
+<circle class="st0" cx="2560" cy="2560" r="1944.4"/>
+<circle class="st0" cx="2560" cy="2560" r="1666.7"/>
+<circle class="st0" cx="2560" cy="2560" r="1388.9"/>
+<circle class="st0" cx="2560" cy="2560" r="1111.1"/>
+<circle class="st0" cx="2560" cy="2560" r="833.3"/>
 </svg>

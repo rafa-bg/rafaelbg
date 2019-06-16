@@ -47,7 +47,7 @@
 		max-width: 600px;	
 		width: 100%;
 		height: auto;
-		opacity: 0.75;
+		opacity: 0.25;
 		animation: float-shadow 6s ease-in-out infinite;
 
 		@mixin xxl_px {
@@ -71,12 +71,12 @@
 
 @keyframes float-shadow {
 	0% {
-		opacity: 0.75;
+		opacity: 0.25;
 	}
 	50% {
-		opacity: 0.5;
+		opacity: 0.75;
 	}
 	100% {
-		opacity: 0.75;
+		opacity: 0.25;
 	}
 }

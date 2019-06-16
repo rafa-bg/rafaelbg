@@ -125,8 +125,11 @@
 	/***********/
 
 	&__contenido {
-		/*margin-top: 60px;*/
 		margin-top: 30px;
+
+		@mixin lg_px {
+			margin-top: 45px;
+		}
 
 		.col {
 			img {

@@ -1,16 +1,27 @@
 .compartir {
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	padding-top: 30px;
 	border-top: 1px solid rgba(0,0,0,0.10);
 
+	@mixin sm_px {
+		margin-top: 45px;
+		margin-bottom: 30px;
+		padding-top: 45px;
+	}
+
 
 	&__icono {
-		margin: 0 10px;
-		font-size: 1.125rem !important;
+		margin: 0 5px;
+		font-size: 1.25rem !important;
 		color: $magentafabuloso;
 		transition: color ease 0.3s;
+
+		@mixin lg_px {
+			margin: 0 10px;
+			font-size: 1.5rem !important;
+		}
 	}
 
 	&__icono:hover {

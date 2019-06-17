@@ -74,7 +74,7 @@
 	&__circulos {
 		width: 992px;
 		height: auto;
-		opacity: 1;
+		opacity: 0.15;
 		mix-blend-mode: overlay;
 		position: absolute;
 		left: 50%;

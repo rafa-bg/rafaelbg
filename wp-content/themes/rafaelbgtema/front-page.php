@@ -15,7 +15,7 @@ get_header();
 </div>
 
 
-<div class="holahola conte conte-fijo mt90-xl mt75-lg mt45-sm mt15 mb90-xl mb75-lg mb60-sm mb45">
+<div class="holahola conte conte-fijo mt90-xl mt75-lg mt45-sm mt15 mb90-xl mb75-lg mb60">
 	<div class="holahola__ancla" id="sobremi"></div>
 	<div class="fila fila--titulovertical">
 		<div class="col col-xl-5 col-lg-6 holahola__fotowrapper">
@@ -80,6 +80,3 @@ get_header();
 <?php
 get_footer();
 ?>
-
-
-

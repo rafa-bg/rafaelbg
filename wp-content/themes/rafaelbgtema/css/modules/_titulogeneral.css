@@ -9,7 +9,7 @@
 	/**/
 	font-size: 3rem;
 	line-height: 100%; 
-	transform: rotate(0deg) translateY(0rem);
+	transform: rotate(0deg) translateY(0);
 	transform-origin: 50% 50%;
 	border-bottom: 5px solid $magentafabuloso;
 	padding: 0 10px 5px 10px;
@@ -31,7 +31,7 @@
 
 	&__wrapper {
 		text-align: center;
-		padding-right: 30px;
+		padding-right: 0px;
 		margin-bottom: 30px;
 
 		@mixin md_px {

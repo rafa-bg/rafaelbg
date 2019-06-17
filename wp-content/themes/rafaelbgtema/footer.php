@@ -14,8 +14,17 @@
 		  var mySwiper = new Swiper ('.swiper-container', {
 		    // Optional parameters
 		    loop: true,
-		    slidesPerView: 2,
-
+		    slidesPerView: 1,
+		    /*******/
+		    breakpointsInverse: true,
+		      breakpoints: {
+		        // when window width is >= 320px
+		        // when window width is >= 480px
+		        992: {
+		          slidesPerView: 2,
+		        },
+		      },
+		    /*******/
 		    // If we need pagination
 		    pagination: {
 		      el: '.swiper-pagination',

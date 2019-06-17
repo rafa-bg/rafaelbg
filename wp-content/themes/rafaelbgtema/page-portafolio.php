@@ -66,12 +66,12 @@ get_header();
 	?>		
 </div>
 
-<div class="testimoniales seccion conte conte-fijo">
-	<div class="fila fila--titulovertical">
+<div class="testimoniales seccion conte conte-fijo" style="padding: 0;">
+	<div class="fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
 			<h1 class="titulogeneral">Testimoniales <span class="titulogeneral__dash"></span></h1>
 		</div>
-		<div class="col-contenido fila testimoniales__slider">
+		<div class="col-contenido testimoniales__slider">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<!--slides--->

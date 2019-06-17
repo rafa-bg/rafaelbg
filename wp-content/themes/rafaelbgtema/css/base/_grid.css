@@ -5,6 +5,14 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 }
+
+.fila--titulovertical {
+	@mixin clearfix;
+	display: flex;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
 .fila-centrado {
 	display: flex;
 	justify-content: center;

@@ -2,7 +2,8 @@
 <html <?php language_attributes(); ?> >
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	<meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height" />
+
 	<meta name="msapplication-TileColor" content="#03181D">
 	<meta name="theme-color" content="#03181D">
 	<!--social-->
@@ -52,7 +53,7 @@
 			</div>
 		</div>
 			<div class="barranavegacion">
-				<a href="<?php esc_url(site_url()) ?>">
+				<a href="<?php echo esc_url(site_url()) ?>">
 					<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="barranavegacion__logo">
 				</a>
 

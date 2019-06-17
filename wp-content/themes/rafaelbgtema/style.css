@@ -3345,6 +3345,7 @@ select { /* 1 */
 }html {
 	overflow-x: hidden;
 }body {
+	overflow-x: hidden;
   	background-color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1rem;
@@ -3372,6 +3373,19 @@ select { /* 1 */
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }.fila::after {
+		content: "";
+		clear: both;
+		display: table;
+	}.fila--titulovertical {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}.fila--titulovertical::after {
 		content: "";
 		clear: both;
 		display: table;
@@ -4216,7 +4230,7 @@ select { /* 1 */
 	}.portada__circulos {
 		width: 992px;
 		height: auto;
-		opacity: 1;
+		opacity: 0.15;
 		mix-blend-mode: overlay;
 		position: absolute;
 		left: 50%;
@@ -4293,9 +4307,9 @@ select { /* 1 */
 	/**/
 	font-size: 3rem;
 	line-height: 100%; 
-	-webkit-transform: rotate(0deg) translateY(0rem); 
-	    -ms-transform: rotate(0deg) translateY(0rem); 
-	        transform: rotate(0deg) translateY(0rem);
+	-webkit-transform: rotate(0deg) translateY(0); 
+	    -ms-transform: rotate(0deg) translateY(0); 
+	        transform: rotate(0deg) translateY(0);
 	-webkit-transform-origin: 50% 50%;
 	    -ms-transform-origin: 50% 50%;
 	        transform-origin: 50% 50%;
@@ -4320,7 +4334,7 @@ select { /* 1 */
 }
 	}.titulogeneral__wrapper {
 		text-align: center;
-		padding-right: 30px;
+		padding-right: 0px;
 		margin-bottom: 30px;
 	}@media (min-width: 768px) {.titulogeneral__wrapper {
 			text-align: left
@@ -5033,15 +5047,23 @@ select { /* 1 */
 			height: 465px
 	}
 	}/******************/.testimoniales__slider {
+		/*
 		padding-left: 30px;
 		padding-right: 30px;
+		*/
 		position: relative;
+		padding-left: 0px;
+		padding-right: 0px;
 	}.testimoniales__wrapper {
-		padding: 0 65px 0 45px;
+		/*padding: 0 65px 0 45px;*/
+		padding: 0;
 	}.testimoniales__unode {
+		width: 100%;
 		background-color: #F9FAFA;
 		border-radius: 10px;
-		padding: 30px 50px 30px 50px;
+		/*padding: 30px 50px 30px 50px;*/
+		padding: 0;
+
 		position: relative;
 		-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -5049,6 +5071,7 @@ select { /* 1 */
 		font-size: 1.125rem;
 		line-height: 125%;
 	}.testimoniales__icono {
+		display: none !important;
 		color: #D50057 !important;
 		margin: 0;
 		font-size: 3rem !important;
@@ -5056,6 +5079,7 @@ select { /* 1 */
 		top: 30px;
 		left: -30px;
 	}.testimoniales__foto {
+		display: none;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
@@ -5082,8 +5106,10 @@ select { /* 1 */
 		    -ms-transform: translateX(90px);
 		        transform: translateX(90px);
 	}.testimoniales .swiper-container {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0;
+		padding-bottom: 0;
+		/*padding-top: 10px;
+		padding-bottom: 10px;*/
 	}.testimoniales__flecha {
 	position: absolute;
 	top: calc(50% - 10px);

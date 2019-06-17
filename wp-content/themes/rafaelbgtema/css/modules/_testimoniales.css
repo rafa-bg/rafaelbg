@@ -1,19 +1,27 @@
 .testimoniales {
 
 	&__slider {
+		/*
 		padding-left: 30px;
 		padding-right: 30px;
+		*/
 		position: relative;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	&__wrapper {
-		padding: 0 65px 0 45px;
+		/*padding: 0 65px 0 45px;*/
+		padding: 0;
 	}
 	
 	&__unode {
+		width: 100%;
 		background-color: #F9FAFA;
 		border-radius: 10px;
-		padding: 30px 50px 30px 50px;
+		/*padding: 30px 50px 30px 50px;*/
+		padding: 0;
+
 		position: relative;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
@@ -24,6 +32,7 @@
 	}
 
 	&__icono {
+		display: none !important;
 		color: $magentafabuloso !important;
 		margin: 0;
 		font-size: 3rem !important;
@@ -33,6 +42,7 @@
 	}
 
 	&__foto {
+		display: none;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
@@ -61,8 +71,10 @@
 	}
 
 	.swiper-container {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0;
+		padding-bottom: 0;
+		/*padding-top: 10px;
+		padding-bottom: 10px;*/
 	}
 }
 

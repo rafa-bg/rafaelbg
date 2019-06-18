@@ -143,6 +143,9 @@ get_header();
 			<span class="testimoniales__flecha testimoniales__flecha--izquierda"></span>
 			<span class="testimoniales__flecha testimoniales__flecha--derecha"></span>
 			<!--navegacion-->
+			<!-- If we need pagination -->
+			 <div class="swiper-pagination"></div>
+			<!---->
 		</div>
 	</div>
 </div>

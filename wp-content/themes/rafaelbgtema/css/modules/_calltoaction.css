@@ -89,5 +89,9 @@
 }
 
 .calltoaction.calltoaction--contacto {
-	margin-top: 0px;
+	margin-top: 80px;
+
+	@mixin sm_px {
+		margin-top: 0;
+	}
 }

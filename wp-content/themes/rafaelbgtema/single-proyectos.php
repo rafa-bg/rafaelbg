@@ -37,8 +37,10 @@ the_post();
 				<?php the_field('proyecto__creditos'); ?>
 			</div>
 		</div>
-		<div class="col col-12 unproyecto__contenido">
-			<div class="fila fila-centrado">
+	</div>
+</div>
+<div class="conte conte-fijo unproyecto__contenido">
+	<div class="fila">
 				<?php
 				//aca van los proyectos
 				$medarcade = 33;
@@ -68,9 +70,6 @@ the_post();
 				}
 				///aca van los proyectos
 				?>
-				
-			</div>
-		</div>
 	</div>
 </div>
 

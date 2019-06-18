@@ -1,9 +1,12 @@
 .fila {
 	@mixin clearfix;
-	margin-right: -30px;
 	display: flex;
 	align-items: stretch;
 	flex-wrap: wrap;
+	/*
+	margin-left: -15px;
+	margin-right: -15px;
+	*/
 }
 
 .fila--titulovertical {
@@ -22,13 +25,15 @@
 	width: 100%;
 	display: block;
 	margin: 0 auto;
-	/**/
+	/*
 	padding-left: 15px;
 	padding-right: 15px;
+	*/
 
 	@mixin sm_px {
-		padding-left: 30px;
-		padding-right: 30px;
+		/*padding-left: 15px;
+		padding-right:15px;
+		*/
 	}
 }
 
@@ -69,7 +74,8 @@
 
 .col {
 	float: left;
-	padding-right: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	box-sizing: border-box;
 	width: 100%;
 }
@@ -176,7 +182,7 @@
 	float: unset;
 
 	@mixin xl_px {
-		width: 85px;
+		width: 75px;
 		padding-right: 30px;
 		float: left;
 	}
@@ -187,7 +193,7 @@
 	float: unset;
 
 	@mixin xl_px {
-		width: calc(100% - 85px);
+		width: calc(100% - 75px);
 			float: left;
 	}
 }

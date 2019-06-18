@@ -1,7 +1,7 @@
 .portafoliothumbnails {
 
 	&__unode {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 
 		@mixin lg_px {
 			margin-bottom: 0;
@@ -22,7 +22,7 @@
 		}
 
 		@mixin xl_px {
-			height: 328px;
+			height: 378px;
 		}
 	}
 	&__img {
@@ -40,7 +40,7 @@
 		}
 
 		@mixin xl_px {
-			height: 328px;
+			height: 378px;
 		}
 	}
 

@@ -15,11 +15,13 @@
 	padding: 0 10px 5px 10px;
 
 	@mixin md_px {
+		margin: 0 0 0 15px;
 		padding: 0 30px 5px 0px;
 		font-size: 4rem;
 	}
 
 	@mixin xl_px {
+		margin: 0;
 		transform: rotate(-90deg) translateY(4.25rem);
 		transform-origin: 0 100%;
 		white-space: nowrap;

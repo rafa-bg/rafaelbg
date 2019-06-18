@@ -47,11 +47,11 @@
 			width: 200px;
 		}
 		@mixin sm_px {
-			width: 200px;
+			width: 260px;
 			margin: 0 0 0 60px;
 		}
 		@mixin lg_px {
-			width: 230px;
+			width: 300px;
 		} 
 	}
 

@@ -18,8 +18,6 @@
 		    /*******/
 		    breakpointsInverse: true,
 		      breakpoints: {
-		        // when window width is >= 320px
-		        // when window width is >= 480px
 		        992: {
 		          slidesPerView: 2,
 		        },
@@ -55,9 +53,6 @@
 		    return t;
 		  }(document, "script", "twitter-wjs"));
 		  /************ TWITTER ******************************/
-
 		  </script>	
-
-
 	</body>
 </html>

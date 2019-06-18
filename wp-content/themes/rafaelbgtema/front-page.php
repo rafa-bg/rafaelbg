@@ -19,7 +19,7 @@ get_header();
 	<div class="holahola__ancla" id="sobremi"></div>
 	<div class="fila fila--titulovertical">
 		<div class="col col-xl-5 col-lg-6 holahola__fotowrapper">
-			<img src="<?php echo get_theme_file_uri('img/provicional.jpg') ?>" alt="Hi, my name is (What?) My name is (Who?)" class="holahola__foto">
+			<img src="<?php echo get_theme_file_uri('img/provicional.jpg') ?>" alt="Hi, my name is (What?) My name is (Who?)" class="holahola__foto wow fadeIn" data-wow-offset="100">
 		</div>
 		<div class="col col-xl-1 col-lg-0 col-md-0"></div>
 		<div class="col col-xl-6 col-lg-6 holahola__info">
@@ -58,7 +58,7 @@ get_header();
 			<div class="col col-lg-4 portafoliothumbnails__unode">
 				<div class="portafoliothumbnails__wrapper">
 					<a href="<?php the_permalink(); ?>">
-						<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafoliothumbnails__img">
+						<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafoliothumbnails__img wow fadeIn" data-wow-offset="100">
 					</a>
 				</div>
 			</div>

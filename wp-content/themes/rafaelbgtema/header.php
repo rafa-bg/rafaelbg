@@ -20,6 +20,17 @@
 </head>
 <body <?php body_class()?> >
 
+	<div id="loader" class="loader">
+		<div class="loader__ondas">
+			<div class="lds-css ng-scope">
+				<div style="width:100%; height:100%" class="lds-ripple">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="menuprincipal">
 		<div class="menuprincipal__wrapperoverflow">
 			<img src="<?php echo get_theme_file_uri('img/logo.svg') ?>" class="menuprincipal__logo">

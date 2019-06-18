@@ -21,7 +21,7 @@
 
 	&__logo {
 		width: 70%;
-		max-width: 300px;
+		max-width: 275px;
 		display: block;
 		margin: 0 auto;
 		transform: translateX(0);
@@ -33,10 +33,10 @@
 		}
 
 		@mixin xl_px {
-			max-width: 400px;
+			max-width: 350px;
 		}
 		@mixin 2000_px {
-			max-width: 600px
+			max-width: 550px
 		}
 	}
 

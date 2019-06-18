@@ -32,7 +32,7 @@ get_header();
 	<div class="portafolio__unode">
 		<div class="portafolio__wrapperimagen">
 			<a href="<?php the_permalink() ?>">
-				<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafolio__imagen">
+				<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafolio__imagen wow fadeIn" data-wow-offset="100">
 			</a>
 		</div>
 		<div class="portafolio__informacion">

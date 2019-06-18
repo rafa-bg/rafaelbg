@@ -4,13 +4,6 @@ get_header();
 <div class="portada">
 	<h1 class="portada__titulo">Portafolio</h1>
 	<img sizes="650px" srcset="<?php echo get_theme_file_uri('img/portada__icosaedro.png'); ?> 650w, <?php echo get_theme_file_uri('img/portada__icosaedro-hdpi.png') ?> 1300w" alt="" class="portada__icosaedro">
-	<picture>
-		<source sizes="2560px" srcset="<?php echo get_theme_file_uri('img/fondo-2560.jpg') ?> 2560w, <?php echo get_theme_file_uri('img/fondo-2560-hdpi.jpg') ?> 5120w" media="(min-width: 2000px)">
-
-		<source sizes="1920px" srcset="<?php echo get_theme_file_uri('img/fondo-1920.jpg') ?> 1920w, <?php echo get_theme_file_uri('img/fondo-1920-hdpi.jpg') ?> 3840w" media="(min-width: 992px)">
-
-		<img srcset="<?php echo get_theme_file_uri('img/fondo-992.jpg') ?> 992w, <?php echo get_theme_file_uri('img/fondo-992-hdpi.jpg') ?> 1984w" class="portada__fondo" alt="Rafael//BG">
-	</picture>
 </div>
 
 <?php

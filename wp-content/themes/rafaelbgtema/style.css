@@ -4167,14 +4167,25 @@ select { /* 1 */
 	overflow: hidden;
 	height: 100vh;
 	width: 100%;
-	background-image: url(img/fondotest.jpg);
+	background-image: url(img/fondo900.jpg);
 	background-size: auto 100vh;
 	background-position: center center;
-}@media (min-width: 576px) {.portada {
-		margin-top: 0px;
-		height: 100vh
+}@media (-webkit-min-device-pixel-ratio: 2) {.portada {
+		background-image: url(img/fondo900--hdpi.jpg)
 }
-	}.portada--portadaprincipal {
+	}@media (min-width: 768px) {.portada {
+ 		background-image: url(img/fondo1080.jpg)
+}
+ 	}@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2)  {.portada {
+ 	 	background-image: url(img/fondo1080--hdpi.jpg)
+}
+ 	}@media (min-width: 1980px) {.portada {
+ 	 	background-image: url(img/fondo1440.jpg)
+}
+ 	 }@media (min-width: 1980px) and (-webkit-min-device-pixel-ratio: 2)  {.portada {
+ 	 	 background-image: url(img/fondo1440--hdpi.jpg)
+}
+ 	 }.portada--portadaprincipal {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -4656,7 +4667,26 @@ select { /* 1 */
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-}/**/@media (min-width: 576px) {.calltoaction {
+	/**/
+	background-image: url(img/fondo900.jpg);
+	background-size: auto 100vh;
+	background-position: center center;
+}@media (-webkit-min-device-pixel-ratio: 2) {.calltoaction {
+		background-image: url(img/fondo900--hdpi.jpg)
+}
+	}@media (min-width: 768px) {.calltoaction {
+ 		background-image: url(img/fondo1080.jpg)
+}
+ 	}@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2)  {.calltoaction {
+ 	 	background-image: url(img/fondo1080--hdpi.jpg)
+}
+ 	}@media (min-width: 1980px) {.calltoaction {
+ 	 	background-image: url(img/fondo1440.jpg)
+}
+ 	 }@media (min-width: 1980px) and (-webkit-min-device-pixel-ratio: 2)  {.calltoaction {
+ 	 	 background-image: url(img/fondo1440--hdpi.jpg)
+}
+ 	 }@media (min-width: 576px) {.calltoaction {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;

@@ -32,7 +32,7 @@ get_header();
 	<div class="portafolio__unode">
 		<div class="portafolio__wrapperimagen">
 			<a href="<?php the_permalink() ?>">
-				<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafolio__imagen wow fadeIn" data-wow-offset="100">
+				<img class="portafolio__imagen wow fadeIn lazyload" data-srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" data-wow-offset="100">
 			</a>
 		</div>
 		<div class="portafolio__informacion">
@@ -90,7 +90,7 @@ get_header();
 										// Inspira Soul
 									</h3>
 								</div>
-								<img src="<?php echo get_theme_file_uri('/img/testimonial__jm.jpg') ?>" alt="" class="testimoniales__foto">
+								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__jm.jpg') ?>" alt="">
 							</div>
 							
 						</div>
@@ -111,7 +111,7 @@ get_header();
 										// Diseñadora Gráfica
 									</h3>
 								</div>
-								<img src="<?php echo get_theme_file_uri('/img/testimonial__vm.jpg') ?>" alt="" class="testimoniales__foto">
+								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__vm.jpg') ?>" alt="">
 							</div>
 							
 						</div>
@@ -132,7 +132,7 @@ get_header();
 										// Agencia LOCA
 									</h3>
 								</div>
-								<img src="<?php echo get_theme_file_uri('/img/testimonial__lln.jpg') ?>" alt="" class="testimoniales__foto">
+								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__lln.jpg') ?>" alt="">
 							</div>
 							
 						</div>

@@ -123,7 +123,7 @@ the_post();
 				<div class="col col-lg-4 portafoliothumbnails__unode">
 					<div class="portafoliothumbnails__wrapper">
 						<a href="<?php the_permalink(); ?>">
-							<img srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" class="portafoliothumbnails__img">
+							<img class="portafoliothumbnails__img wow fadeIn lazyload" data-srcset="<?php the_post_thumbnail_url('portafolio-horizontal'); ?> 1240w, <?php the_post_thumbnail_url('portafolio-horizontal-hdpi'); ?> 2480w" data-wow-offset="100">
 						</a>
 					</div>
 				</div>

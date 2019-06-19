@@ -17,11 +17,11 @@
 
 		@mixin lg_px {
 			font-size: 4rem;
-			transform: translateX(-62px);
 		}
 
 		@mixin xl_px {
 			font-size: 5rem;
+			transform: translateX(-62px);
 		}
 	}
 

@@ -9,6 +9,31 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	/*********/
+	background-image: url(img/fondo900.jpg);
+	background-size: auto 100vh;
+	background-position: center center;
+
+	@media (-webkit-min-device-pixel-ratio: 2) {
+		background-image: url(img/fondo900--hdpi.jpg);
+	}
+
+	@media (min-width: 768px) {
+ 		background-image: url(img/fondo1080.jpg);
+ 	}
+
+ 	@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2)  {
+ 	 	background-image: url(img/fondo1080--hdpi.jpg);
+ 	}
+
+ 	@media (min-width: 1980px) {
+ 	 	background-image: url(img/fondo1440.jpg);
+ 	 }
+
+ 	 @media (min-width: 1980px) and (-webkit-min-device-pixel-ratio: 2)  {
+ 	 	 background-image: url(img/fondo1440--hdpi.jpg);
+ 	 }
+
 
 	&__titulo {
 		font-family: BebasNeue;

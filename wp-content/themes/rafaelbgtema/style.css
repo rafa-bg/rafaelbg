@@ -4319,7 +4319,7 @@ select { /* 1 */
 	}
 	}.portada__luna {
 		width: 105%;
-		max-width: 650px;
+		max-width: 600px;
 		height: auto;
 		position: absolute;
 		left: 50%;
@@ -4331,11 +4331,11 @@ select { /* 1 */
 			width: 90%
 	}
 	}@media (min-width: 992px) {.portada__luna {
-			max-width: 700px
+			max-width: 600px
 	}
 	}.portada__icosaedro {
 		width: 110%;
-		max-width: 650px;
+		max-width: 600px;
 		height: auto;
 		position: absolute;
 		left: 50%;
@@ -4347,7 +4347,7 @@ select { /* 1 */
 			width: 90%
 	}
 	}@media (min-width: 992px) {.portada__icosaedro {
-			max-width: 700px
+			max-width: 600px
 	}
 	}.titulogeneral {
 	text-transform: uppercase;
@@ -5488,7 +5488,26 @@ select { /* 1 */
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-}.cuatrocerocuatro__titulo {
+	/*********/
+	background-image: url(img/fondo900.jpg);
+	background-size: auto 100vh;
+	background-position: center center;
+}@media (-webkit-min-device-pixel-ratio: 2) {.cuatrocerocuatro {
+		background-image: url(img/fondo900--hdpi.jpg)
+}
+	}@media (min-width: 768px) {.cuatrocerocuatro {
+ 		background-image: url(img/fondo1080.jpg)
+}
+ 	}@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2)  {.cuatrocerocuatro {
+ 	 	background-image: url(img/fondo1080--hdpi.jpg)
+}
+ 	}@media (min-width: 1980px) {.cuatrocerocuatro {
+ 	 	background-image: url(img/fondo1440.jpg)
+}
+ 	 }@media (min-width: 1980px) and (-webkit-min-device-pixel-ratio: 2)  {.cuatrocerocuatro {
+ 	 	 background-image: url(img/fondo1440--hdpi.jpg)
+}
+ 	 }.cuatrocerocuatro__titulo {
 		font-family: BebasNeue;
 		font-weight: 500;
 		font-size: 10rem;

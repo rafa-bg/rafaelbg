@@ -47,6 +47,7 @@
 			justify-content: space-between;
 			align-items: center;
 			white-space: nowrap;
+			margin: 0 0 30px 0;
 		}
 	}
 
@@ -65,7 +66,7 @@
 	&__parrafo {
 		color: $verdeserio;
 		line-height: 150%;
-		font-size: 1rem;
+		font-size: 	1rem;
 		margin: 0 0 15px 0;
 	}
 
@@ -100,6 +101,19 @@
 		@mixin lg_px {
 			margin-bottom: 0;
 		}
+	}
+
+	strong {
+		color: $magentafabuloso
+	}
+
+	a {
+		color: $magentafabuloso;
+		transition: color ease 0.25s;
+	}
+
+	a:hover {
+		color: $magentarojo;
 	}
 
 }

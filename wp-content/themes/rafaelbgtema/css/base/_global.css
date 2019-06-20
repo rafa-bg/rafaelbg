@@ -34,3 +34,8 @@ body {
 		min-height: calc(100vh - 79px);
 	}
 }
+
+::selection {
+  background-color: $magentafabuloso;
+  color: #000;
+}

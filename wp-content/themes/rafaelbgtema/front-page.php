@@ -8,7 +8,7 @@ get_header();
 </div>
 
 
-<div class="holahola conte conte-fijo mt90-xl mt75-lg mt45-sm mt15 mb90-xl mb75-lg mb60">
+<div class="holahola conte conte-fijo mt90-xl mt75-lg mt45-sm mt15 mb120-xl mb75-lg mb60">
 	<div class="holahola__ancla" id="sobremi"></div>
 	<div class="fila fila--titulovertical">
 		<div class="col col-xl-5 col-lg-6 holahola__fotowrapper">
@@ -19,10 +19,16 @@ get_header();
 			<h1 class="holahola__titulo">¡HOLA, HOLA!</h1>
 			<h3 class="holahola__subtitulo">//ME LLAMO RAFAEL <span class="holahola__dash"></span></h3>
 			<p class="holahola__parrafo">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie sem ullamcorper dui volutpat ornare. Vivamus scelerisque vitae felis quis pellentesque. Maecenas dapibus metus vel risus volutpat maximus. Cras quis quam eu metus mattis malesuada. Phasellus in mi neque. Integer eget luctus diam. Curabitur nec nulla at nulla ultricies eleifend ut non mauris. Nunc vel mattis orci.
+				<strong>Tengo 28 años y soy de la Ciudad de México.</strong>  Estudié la carrera de diseño gráfico y decidí aplicar mis conocimientos al área de páginas web. Me di cuenta que para lograr cualquier diseño que quisiera tenía que aprender a escribir mi propio código, <strong>así que lo hice.</strong>
 			</p>
 			<p class="holahola__parrafo">
-				Nulla id mi ut mauris fermentum congue. Morbi eros nibh, sodales non luctus vel, facilisis quis mi. Vivamus placerat massa eu diam elementum ultricies. Etiam in orci semper, convallis ligula ut, rhoncus ipsum. Vivamus orci mauris, rhoncus id augue in, malesuada pretium purus. Nullam finibus orci scelerisque, hendrerit turpis in, vulputate dolor. In pulvinar justo nec est dignissim eleifend. Etiam at ante nisi. Donec non iaculis nisi. Nunc non leo nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque semper porttitor hendrerit.
+				Después de estar varios años en agencias creativas, decidí trabajar por mi cuenta. Es muy importante para mi tener un trato cercano con el cliente. Quiero entender tus necesidades y ofrecerte soluciones a la medida.
+			</p>
+			<p class="holahola__parrafo">
+				Tal vez estés pensando en emprender un nuevo negocio o necesitas ayuda para tu próximo proyecto. En todo caso, quiero que sepas que <strong><a href="<?php echo esc_url(site_url('/servicios')) ?>">estás en el lugar correcto.</a></strong> Mi objetivo es ayudar a las pequeñas y medianas empresas a comunicarse de forma efectiva al público.
+			</p>
+			<p class="holahola__parrafo">
+				Aquí podrás ver <strong><a href="<?php echo esc_url(site_url('/portafolio')) ?>">varios casos en los que he participado.</a></strong> Cuando estés listo para dar el siguiente paso, <strong><a href="#contacto" class="smoothscrollgeneral">ponte en contacto.</a></strong> Hablemos de lo que tienes en mente para que podamos encontrar la mejor solución.
 			</p>
 		</div>
 	</div>

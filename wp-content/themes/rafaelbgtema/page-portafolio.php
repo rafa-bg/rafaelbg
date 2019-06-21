@@ -59,6 +59,8 @@ get_header();
 	?>		
 </div>
 
+<!--aun no ;)
+
 <div class="testimoniales seccion conte conte-fijo" style="padding: 0;">
 	<div class="fila--titulovertical">
 		<div class="col-titulo titulogeneral__wrapper">
@@ -67,7 +69,6 @@ get_header();
 		<div class="col-contenido testimoniales__slider">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<!--slides--->
 					<div class="testimoniales__wrapper swiper-slide">
 						<div class="testimoniales__unode">
 							<i class="fas fa-quote-left testimoniales__icono"></i>
@@ -83,12 +84,11 @@ get_header();
 										// Inspira Soul
 									</h3>
 								</div>
-								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__jm.jpg') ?>" alt="">
+								<img class="testimoniales__foto lazyload" data-src="<?php // echo get_theme_file_uri('/img/testimonial__jm.jpg') ?>" alt="">
 							</div>
 							
 						</div>
 					</div>
-					<!--slides--->
 					<div class="testimoniales__wrapper swiper-slide">
 						<div class="testimoniales__unode">
 							<i class="fas fa-quote-left testimoniales__icono"></i>
@@ -104,12 +104,11 @@ get_header();
 										// Diseñadora Gráfica
 									</h3>
 								</div>
-								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__vm.jpg') ?>" alt="">
+								<img class="testimoniales__foto lazyload" data-src="<?php // echo get_theme_file_uri('/img/testimonial__vm.jpg') ?>" alt="">
 							</div>
 							
 						</div>
 					</div>
-					<!--slides--->
 					<div class="testimoniales__wrapper swiper-slide">
 						<div class="testimoniales__unode">
 							<i class="fas fa-quote-left testimoniales__icono"></i>
@@ -125,23 +124,20 @@ get_header();
 										// Agencia LOCA
 									</h3>
 								</div>
-								<img class="testimoniales__foto lazyload" data-src="<?php echo get_theme_file_uri('/img/testimonial__lln.jpg') ?>" alt="">
+								<img class="testimoniales__foto lazyload" data-src="<?php // echo get_theme_file_uri('/img/testimonial__lln.jpg') ?>" alt="">
 							</div>
 							
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--navegacion-->
 			<span class="testimoniales__flecha testimoniales__flecha--izquierda"></span>
 			<span class="testimoniales__flecha testimoniales__flecha--derecha"></span>
-			<!--navegacion-->
-			<!-- If we need pagination -->
 			 <div class="swiper-pagination"></div>
-			<!---->
 		</div>
 	</div>
 </div>
+-->
 
 <?php get_template_part('content/calltoaction'); ?>
 <?php get_template_part('content/contacto'); ?>
